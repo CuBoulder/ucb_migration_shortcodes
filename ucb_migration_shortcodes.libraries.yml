@@ -1,5 +1,5 @@
-ucb-migration-shortcodes:
+shortcode-box:
   version: 1.0
   css:
     theme:
-      css/ucb-migration-shortcodes.css: {}
+      css/shortcode-box.css: {}
