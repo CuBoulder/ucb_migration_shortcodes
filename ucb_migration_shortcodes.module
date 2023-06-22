@@ -8,7 +8,7 @@
 /**
  * Implements hook_theme().
  */
-function ucb_migration_shortcodes_theme() {
+function shortcode_migration_tags_theme() {
   return [
      // Box.
     'shortcode_box' => [

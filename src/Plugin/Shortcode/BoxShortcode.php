@@ -6,7 +6,7 @@ use Drupal\Core\Language\Language;
 use Drupal\shortcode\Plugin\ShortcodeBase;
 
 /**
- * Replace the given text formatted like as a quote.
+ * Creat a box for content with a title and text area.
  *
  * @Shortcode(
  *   id = "box",
