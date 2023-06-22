@@ -1,5 +1,0 @@
-ucb-migration-shortcodes:
-  version: 1.0
-  css:
-    theme:
-      css/ucb-migration-shortcodes.css: {}
