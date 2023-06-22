@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\shortcode_migration_tags\Plugin\Shortcode;
+namespace Drupal\shortcode_basic_tags\Plugin\Shortcode;
 
 use Drupal\Core\Language\Language;
 use Drupal\shortcode\Plugin\ShortcodeBase;
