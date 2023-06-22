@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the box shortcode.
+ *
+ * Available variables:
+ * - url: The url.
+ * - attributes: The attributes array.
+ * - text: The button label.
+ * - title: title if there is a box
+ */
+#}
+
+{% if color == "lightgray" %}
+	{% set bgColor = "gray-light" %}
+{% elseif color == "darkgray" %}
+	{% set bgColor = "gray-dark" %}
+{% elseif color == "black" %}
+	{% set bgColor = "black" %}
+{% else %}
+	{% set bgColor = "white" %}
+{% endif %}
+
+{% if style == "filled" %}
+	<div class="cu-box margin-bottom box-{{ color }} float-{{ float }} {{ style }} background-{{ bgColor }}">
+{% else %}
+	<div class="cu-box margin-bottom box-{{ color }} float-{{ float }} {{ style }} border-{{ bgColor }}">
+{% endif %}
+	{% if title %}
+		<div class="box-title padding ">{{ title }}</div>
+	{% endif %}
+	<div class="box-content padding clearfix">{{ text }}</div>
+</div>

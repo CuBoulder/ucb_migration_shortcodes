@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Register hooks for ShortCodes that use Twig templates.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function shortcode_migration_tags_theme() {
+  return [
+     // Box.
+    'shortcode_box' => [
+      'variables' => ['title' => NULL, 'color' => NULL, 'style' => NULL, 'float' => NULL, 'text' => ''],
+    ],
+  ];
+}
