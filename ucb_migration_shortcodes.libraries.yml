@@ -1,5 +1,0 @@
-shortcode-box:
-  version: 1.0
-  css:
-    theme:
-      css/shortcode-box.css: {}

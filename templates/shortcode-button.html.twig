@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the button shortcode.
+ *
+ * Available variables:
+ * - url: The url.
+ * - attributes: The attributes array.
+ * - text: The button label.
+ */
+#}
+
+<a href="{{ url }}" class="button button-{{ style  }} button-{{ size }} button-{{ buttonColor }}">
+	{% if icon %}
+		<i class="fa {{ icon }}"> </i>
+	{% endif %}
+	{{ text }}
+</a>

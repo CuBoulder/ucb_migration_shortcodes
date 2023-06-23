@@ -6,14 +6,14 @@ use Drupal\Core\Language\Language;
 use Drupal\shortcode\Plugin\ShortcodeBase;
 
 /**
- * Creat a box for content with a title and text area.
+ * Creat a icon for content with a title and text area.
  *
  * @Shortcode(
- *   id = "box",
- *   title = @Translation("Box"),
+ *   id = "icon",
+ *   title = @Translation("Icon"),
  * )
  */
-class BoxShortcode extends ShortcodeBase {
+class IconShortcode extends ShortcodeBase {
 
   /**
    * {@inheritdoc}
@@ -22,21 +22,21 @@ class BoxShortcode extends ShortcodeBase {
 
     // Merge with default attributes.
     $attributes = $this->getAttributes([
-      'title' => '',
+      'shape' => '',
       'color' => '',
-      'style' => '',
-      'float' => '',
+      'size' => '',
+      'wrapper' => '',
     ],
       $attributes
     );
 
     $output = [
-      '#theme' => 'shortcode_box',
-      '#title' => $attributes['title'],
+      '#theme' => 'shortcode_icon',
+      '#shape' => $attributes['shape'],
       '#text' => $text,
       '#color' => $attributes['color'],
-      '#style' => $attributes['style'],
-      '#float' => $attributes['float'],
+      '#size' => $attributes['size'],
+      '#wrapper' => $attributes['wrapper'],
     ];
     return $this->render($output);
   }

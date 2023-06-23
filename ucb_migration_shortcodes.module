@@ -1,5 +1,8 @@
 <?php
 
+// Top of the file.
+use Drupal\views\ViewExecutable;
+
 /**
  * @file
  * Register hooks for ShortCodes that use Twig templates.
@@ -13,6 +16,14 @@ function ucb_migration_shortcodes_theme() {
      // Box.
     'shortcode_box' => [
       'variables' => ['title' => NULL, 'color' => NULL, 'style' => NULL, 'float' => NULL, 'text' => ''],
+    ],
+    // Button.
+    'shortcode_button' => [
+      'variables' => ['url' => NULL, 'color' => NULL, 'size' => NULL, 'style' => NULL, 'text' => ''],
+    ],
+    // Icon.
+    'shortcode_icon' => [
+      'variables' => ['shape' => NULL, 'color' => NULL, 'size' => NULL, 'wrapper' => NULL, 'text' => ''],
     ],
   ];
 }
