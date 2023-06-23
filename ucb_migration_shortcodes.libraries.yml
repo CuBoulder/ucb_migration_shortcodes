@@ -1,0 +1,7 @@
+shortcodes-library:
+  version: 1.x
+  js:
+    js/expand-content.js: {}
+  css:
+    theme:
+      css/shortcodes.css: {}

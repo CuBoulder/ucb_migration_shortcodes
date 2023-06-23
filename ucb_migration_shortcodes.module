@@ -1,8 +1,5 @@
 <?php
 
-// Top of the file.
-use Drupal\views\ViewExecutable;
-
 /**
  * @file
  * Register hooks for ShortCodes that use Twig templates.
@@ -17,13 +14,38 @@ function ucb_migration_shortcodes_theme() {
     'shortcode_box' => [
       'variables' => ['title' => NULL, 'color' => NULL, 'style' => NULL, 'float' => NULL, 'text' => ''],
     ],
-    // Button.
-    'shortcode_button' => [
-      'variables' => ['url' => NULL, 'color' => NULL, 'size' => NULL, 'style' => NULL, 'text' => ''],
-    ],
     // Icon.
     'shortcode_icon' => [
       'variables' => ['shape' => NULL, 'color' => NULL, 'size' => NULL, 'wrapper' => NULL, 'text' => ''],
     ],
+    // Button.
+    'shortcode_button' => [
+      'variables' => ['link' => NULL, 'ico' => NULL, 'title' => NULL, 'color' => NULL, 'size' => NULL, 'style' => NULL, 'text' => '',],
+    ],
+    // Column.
+    'shortcode_column' => [
+      'variables' => ['size' => NULL, 'order' => NULL, 'text' => ''],
+    ],
+    // Expand.
+    'shortcode_expand' => [
+      'variables' => ['title' => NULL, 'style' => NULL, 'text' => ''],
+    ],
+    // Countup.
+    'shortcode_countup' => [
+      'variables' => ['text' => ''],
+    ],
+    // Callout.
+    'shortcode_callout' => [
+      'variables' => ['size' => NULL, 'text' => ''],
+    ],
+    // Give.
+    'shortcode_give' => [
+      'variables' => ['link' => NULL, 'ico' => NULL, 'title' => NULL, 'color' => NULL, 'size' => NULL, 'style' => NULL, 'text' => '',],
+    ],
   ];
+}
+
+function ucb_migration_shortcodes_preprocess_page(&$variables) {
+  // Theme name: 'ucb_migration_shortcodes', library name: 'shortcodes-library'. 
+  $variables['#attached']['library'][] = 'ucb_migration_shortcodes/shortcodes-library';
 }

@@ -6,14 +6,14 @@ use Drupal\Core\Language\Language;
 use Drupal\shortcode\Plugin\ShortcodeBase;
 
 /**
- * The button shortcode.
+ * The give shortcode.
  *
  * @Shortcode(
- *   id = "button",
- *   title = @Translation("Button"),
+ *   id = "give",
+ *   title = @Translation("Give"),
  * )
  */
-class ButtonShortcode extends ShortcodeBase {
+class GiveShortcode extends ShortcodeBase {
 
   /**
    * {@inheritdoc}

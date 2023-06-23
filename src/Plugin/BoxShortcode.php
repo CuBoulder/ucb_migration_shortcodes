@@ -6,14 +6,15 @@ use Drupal\Core\Language\Language;
 use Drupal\shortcode\Plugin\ShortcodeBase;
 
 /**
- * The button shortcode.
+ * Creat a box for content with a title and text area.
  *
  * @Shortcode(
- *   id = "button",
- *   title = @Translation("Button"),
+ *   id = "box",
+ *   title = @Translation("Box"),
+ *   description = @Translation("Replace the given text formatted like as a quote.")
  * )
  */
-class ButtonShortcode extends ShortcodeBase {
+class BoxShortcode extends ShortcodeBase {
 
   /**
    * {@inheritdoc}
@@ -22,24 +23,21 @@ class ButtonShortcode extends ShortcodeBase {
 
     // Merge with default attributes.
     $attributes = $this->getAttributes([
-      'url' => '',
+      'title' => '',
       'color' => '',
       'style' => '',
-      'size' => '',
-      'icon' => '',
+      'float' => '',
     ],
       $attributes
     );
 
     $output = [
-      '#theme' => 'shortcode_button',
-      '#link' => $attributes['url'],
-      '#title' => $text,
+      '#theme' => 'shortcode_box',
+      '#title' => $attributes['title'],
       '#text' => $text,
       '#color' => $attributes['color'],
       '#style' => $attributes['style'],
-      '#size' => $attributes['size'],
-      '#ico' => $attributes['icon'],
+      '#float' => $attributes['float'],
     ];
     return $this->render($output);
   }
