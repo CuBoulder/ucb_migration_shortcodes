@@ -44,7 +44,7 @@ function ucb_migration_shortcodes_theme() {
     ],
     // Map.
     'shortcode_map' => [
-      'variables' => ['size' => NULL, 'text' => ''],
+      'variables' => ['size' => NULL, 'maplocation' => NULL, 'mapfragment' => NULL, 'text' => ''],
     ],
   ];
 }

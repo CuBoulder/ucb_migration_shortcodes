@@ -13,30 +13,42 @@ use Drupal\shortcode\Plugin\ShortcodeBase;
  *   title = @Translation("Map"),
  * )
  */
-class MapShortcode extends ShortcodeBase {
+class MapShortcode extends ShortcodeBase
+{
 
   /**
    * {@inheritdoc}
    */
-  public function process(array $attributes, $text, $langcode = Language::LANGCODE_NOT_SPECIFIED) {
+  public function process(array $attributes, $text, $langcode = Language::LANGCODE_NOT_SPECIFIED)
+  {
 
     // Merge with default attributes.
-    $attributes = $this->getAttributes([
-      'size' => '',
-    ],
+    $attributes = $this->getAttributes(
+      [
+        'size' => '',
+      ],
       $attributes
     );
 
     $parts = parse_url($text);
     parse_str($parts['query'], $query);
-    $maplocation = $query['pb'];
+    if ($query['pb']) {
+      $mapLocation = $query['pb'];
+    } elseif ($query['id']) {
+      $mapLocation = $query['id'];
+      $mapFragment = $parts['fragment'];
+      $mapFragment = preg_replace('/[^0-9]/', '', $mapFragment);
+    } else {
+      $mapLocation = 'none';
+    }
 
 
     $output = [
       '#theme' => 'shortcode_map',
       '#text' => $text,
       '#size' => $attributes['size'],
-      '#maplocation' => $maplocation,
+      '#maplocation' => $mapLocation,
+      '#mapfragment' => $mapFragment
     ];
     return $this->render($output);
   }
