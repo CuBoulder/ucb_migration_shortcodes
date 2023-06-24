@@ -10,7 +10,7 @@ use Drupal\shortcode\Plugin\ShortcodeBase;
  *
  * @Shortcode(
  *   id = "callout",
- *   title = @Translation("Call Out"),
+ *   title = @Translation("Callout"),
  * )
  */
 class CalloutShortcode extends ShortcodeBase {
