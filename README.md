@@ -4,3 +4,12 @@ This module requires the Shortcode module with patch 11 installed to run properl
 
 ## Included shortcodes so far
 - Box
+- Icon
+- Box
+- Column
+- Expand
+- Count Up
+- Callout
+- Image Caption
+- Give
+- Map
