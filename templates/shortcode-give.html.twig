@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation for the button shortcode.
+ * Default theme implementation for the give shortcode.
  *
  * Available variables:
  * - url: The url.
@@ -10,7 +10,15 @@
  */
 #}
 
-<a href="{{ link }}" title="Donation Button" class="button cu-give-button button-{{ style }} button-{{ size }} button-{{ color }}">
+{% if color == "dark" %}
+	{% set bgColor = "gray-dark" %}
+{% elseif color == "light" %}
+	{% set bgColor = "gray-light" %}
+{% else %}
+	{% set bgColor = "gold" %}
+{% endif %}
+
+<a href="{{ link }}" title="Donation Button" class="button cu-give-button button-{{ style }} button-{{ size }} button-{{ bgColor }}">
 	<i class="icon-cu"></i>
 	{{ text }}
 </a>

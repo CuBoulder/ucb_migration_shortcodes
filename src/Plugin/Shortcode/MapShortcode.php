@@ -6,14 +6,14 @@ use Drupal\Core\Language\Language;
 use Drupal\shortcode\Plugin\ShortcodeBase;
 
 /**
- * The give shortcode.
+ * Creat a map for content with a title and text area.
  *
  * @Shortcode(
- *   id = "give",
- *   title = @Translation("Give"),
+ *   id = "map",
+ *   title = @Translation("Map"),
  * )
  */
-class GiveShortcode extends ShortcodeBase {
+class MapShortcode extends ShortcodeBase {
 
   /**
    * {@inheritdoc}
@@ -22,24 +22,21 @@ class GiveShortcode extends ShortcodeBase {
 
     // Merge with default attributes.
     $attributes = $this->getAttributes([
-      'url' => '',
-      'color' => '',
-      'style' => '',
       'size' => '',
-      'icon' => '',
     ],
       $attributes
     );
 
+    $parts = parse_url($text);
+    parse_str($parts['query'], $query);
+    $maplocation = $query['pb'];
+
+
     $output = [
-      '#theme' => 'shortcode_give',
-      '#link' => $attributes['url'],
-      '#title' => $text,
+      '#theme' => 'shortcode_map',
       '#text' => $text,
-      '#color' => $attributes['color'],
-      '#style' => $attributes['style'],
       '#size' => $attributes['size'],
-      '#ico' => $attributes['icon'],
+      '#maplocation' => $maplocation,
     ];
     return $this->render($output);
   }

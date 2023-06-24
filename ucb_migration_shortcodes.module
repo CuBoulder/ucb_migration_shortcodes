@@ -42,6 +42,10 @@ function ucb_migration_shortcodes_theme() {
     'shortcode_give' => [
       'variables' => ['link' => NULL, 'ico' => NULL, 'title' => NULL, 'color' => NULL, 'size' => NULL, 'style' => NULL, 'text' => '',],
     ],
+    // Map.
+    'shortcode_map' => [
+      'variables' => ['size' => NULL, 'text' => ''],
+    ],
   ];
 }
 

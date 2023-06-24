@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the map shortcode.
+ *
+ * Available variables:
+ * - text 
+ * - size
+ */
+#}
+
+<div class="{{ size }}">
+	<iframe src="https://www.google.com/maps/embed?pb={{ mapLocation }}" loading="lazy" referrerpolicy="no-referrer"></iframe>
+</div>
+
+
+<div class="{{ size }}" data-map-location="{{ mapLocation }}" style="background-image: url('https://staticmap.concept3d.com/map/static-map/?map=336&amp;loc={{ mapLocation }}')">
+	<a href="https://www.colorado.edu/map/?id=336{{ mapLocation ? '#!m/' ~ mapLocation : '' }}">
+		<span>View location on the Campus Map</span>
+	</a>
+</div>
+
+
