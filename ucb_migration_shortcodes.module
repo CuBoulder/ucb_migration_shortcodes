@@ -46,6 +46,10 @@ function ucb_migration_shortcodes_theme() {
     'shortcode_map' => [
       'variables' => ['size' => NULL, 'maplocation' => NULL, 'mapfragment' => NULL, 'text' => ''],
     ],
+    // ImageCaption.
+    'shortcode_imagecaption' => [
+      'variables' => ['align' => NULL, 'text' => ''],
+    ],
   ];
 }
 

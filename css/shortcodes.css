@@ -877,3 +877,60 @@ a.map-link span {
   padding: 2px;
   color: white;
 }
+
+/*** Image Caption ***/
+.image-caption {
+  font-size: 80%;
+  line-height: 120%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 540px) {
+  .image-caption-right {
+    float: right;
+    margin-left: 20px;
+    max-width: 50%;
+    width: 240px;
+  }
+  .image-caption-right img {
+    display: block;
+    float: none;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  .image-caption-left {
+    float: left;
+    margin-right: 20px;
+    max-width: 50%;
+    width: 240px;
+  }
+  .image-caption-left img {
+    display: block;
+    float: none;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+}
+.image-caption p {
+  padding: 5px 0;
+  margin: 0;
+}
+
+div.image-caption p:first-child {
+  display: block;
+  margin: 0 !important;
+  padding: 0;
+}
+
+.image-caption p:last-child {
+  margin-bottom: 0;
+}
+
+.image-caption img {
+  float: none;
+}
