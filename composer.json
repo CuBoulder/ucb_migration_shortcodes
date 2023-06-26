@@ -1,5 +1,5 @@
 {
-    "name": "cu-boulder/ucb-migration_shortcodes",
+    "name": "cu-boulder/ucb_migration_shortcodes",
     "description": "Adds in shortcodes that match with the D7 Express shortcodes for easier migration.",
     "license": "GPL-2.0-or-later",
     "type": "drupal-custom-module"
