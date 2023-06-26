@@ -3,7 +3,7 @@ A set of Shortcode module extensions that will hopefully allow for a 1:1 migrati
 This module requires the Shortcode module with patch 11 installed to run properly.
 
 ## Included shortcodes so far
-- Box
+- Button
 - Icon
 - Box
 - Column
