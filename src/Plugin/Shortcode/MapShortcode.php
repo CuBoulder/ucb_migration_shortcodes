@@ -32,9 +32,11 @@ class MapShortcode extends ShortcodeBase
 
     $parts = parse_url($text);
     parse_str($parts['query'], $query);
-    if ($query['pb']) {
+    $mapLocation = '';
+    $mapFragment = '';
+    if (array_key_exists("pb",$query)) {
       $mapLocation = $query['pb'];
-    } elseif ($query['id']) {
+    } elseif (array_key_exists("id",$query)) {
       $mapLocation = $query['id'];
       $mapFragment = $parts['fragment'];
       $mapFragment = preg_replace('/[^0-9]/', '', $mapFragment);
