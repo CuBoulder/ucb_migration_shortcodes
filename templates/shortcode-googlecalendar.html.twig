@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the invisible shortcode.
+ *
+ * Available variables:
+ * - text 
+ */
+#}
+
+{% if 'https://www.google.com/calendar/embed?' in text %}
+	<iframe width="100%" height="600" src="{{ text }}"></iframe>
+{% else %}
+	<strong>Not a valid Google calendar.</strong>
+{% endif %}

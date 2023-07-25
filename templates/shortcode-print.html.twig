@@ -1,0 +1,14 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the print shortcode.
+ *
+ * Available variables:
+ * - text 
+ */
+#}
+
+<a href="javascript:window.print();" title="Print Page Button" class="print-link button button-blue">
+	<i class="fa fa-print"></i>
+	{{ text|striptags('<img>')|t }}
+</a>
