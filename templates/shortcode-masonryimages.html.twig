@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the masonry images shortcode.
+ *
+ * Available variables:
+ * - text 
+ */
+#}
+
+<div class="masonry-images masonry-columns-{{ columns }}">
+{{ text|striptags('<div><img>')|t }}
+</div>

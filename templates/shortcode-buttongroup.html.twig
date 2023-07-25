@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the buttongroup shortcode.
+ *
+ * Available variables:
+ * - color: The background color.
+ * - size: The size of the button group.
+ * - text: The buttons.
+ */
+#}
+
+<div class="buttongroup buttongroup-size-{{ size }} buttongroup-color-{{ color }}">
+	<div class="button-group-content"> 
+		{{ text|striptags('<a>')|t }}
+	</div>
+</div>

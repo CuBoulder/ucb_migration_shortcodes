@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the responsive table shortcode.
+ *
+ * Available variables:
+ * - text 
+ */
+#}
+
+<div class="responsive-table-wrapper responsive-table-{{ breakpoint }}px">
+	<div class="responsive-table-wrapper-inner">
+		{{ text|striptags('<table><tbody><tr><td>')|t }}
+	</div>
+</div>

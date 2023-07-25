@@ -50,6 +50,39 @@ function ucb_migration_shortcodes_theme() {
     'shortcode_imagecaption' => [
       'variables' => ['align' => NULL, 'text' => ''],
     ],
+
+        // ButtonGroup.
+    'shortcode_buttongroup' => [
+      'variables' => ['color' => NULL, 'size' => NULL, 'text' => '',],
+    ],
+        // Invisible.
+    'shortcode_invisible' => [
+      'variables' => ['text' => ''],
+    ],
+            // Google Calendar.
+    'shortcode_googlecalendar' => [
+      'variables' => ['text' => ''],
+    ],
+    // Print.
+    'shortcode_print' => [
+      'variables' => ['text' => ''],
+    ],
+    // Clear.
+    'shortcode_clear' => [
+      'variables' => ['text' => ''],
+    ],
+    // Close Margin.
+    'shortcode_closemargin' => [
+      'variables' => ['text' => ''],
+    ],
+    // Responsive Table.
+    'shortcode_responsivetable' => [
+      'variables' => ['breakpoint' => NULL, 'text' => ''],
+    ],
+    // Masonry Images.
+    'shortcode_masonryimages' => [
+      'variables' => ['columns' => NULL, 'text' => ''],
+    ],
   ];
 }
 
