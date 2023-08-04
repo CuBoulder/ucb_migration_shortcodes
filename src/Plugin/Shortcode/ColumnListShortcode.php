@@ -22,7 +22,7 @@ class ColumnListShortcode extends ShortcodeBase {
 
     // Merge with default attributes.
     $attributes = $this->getAttributes([
-      'columns' => ''
+      'columns' => '',
     ],
       $attributes
     );
@@ -30,7 +30,7 @@ class ColumnListShortcode extends ShortcodeBase {
     $output = [
       '#theme' => 'shortcode_columnlist',
       '#columns' => $attributes['columns'],
-      '#text' => $attributes['text'],
+      '#text' => $text,
     ];
     return $this->render($output);
   }

@@ -5,11 +5,12 @@
  *
  * Available variables:
  * - columns: The number of columns.
+ * - text: The text.
  */
 #}
 
-<div class="columnlist columnlist-{{ columns }}">
+<div class="column-list column-list-{{ columns }}">
 	<ul>
-		{{ text }}
+		{{ text|striptags('<li>')|t }}
 	</ul>
 </div>
