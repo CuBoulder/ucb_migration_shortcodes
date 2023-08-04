@@ -23,6 +23,8 @@ class CountdownShortcode extends ShortcodeBase {
     // Merge with default attributes.
     $attributes = $this->getAttributes([
       'style' => '',
+      'background' => '',
+      'size' => '',
     ],
       $attributes
     );
@@ -31,6 +33,8 @@ class CountdownShortcode extends ShortcodeBase {
       '#theme' => 'shortcode_countdown',
       '#text' => $text,
       '#style' => $attributes['style'],
+      '#background' => $attributes['background'],
+      '#size' => $attributes['size'],
     ];
     return $this->render($output);
   }

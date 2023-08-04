@@ -6,9 +6,11 @@
  * Available variables:
  * - text (the date)
  * - style (inline/float)
+ * - background (solid/transparent)
+ * - size (regular/full)
  */
 #}	
 
-<span class="cu-countdown style-{{ style }}">
+<span class="cu-countdown countdown-{{ style }} countdown-{{ size }} countdown-{{ background }}">
 	{{ text }}
 </span>

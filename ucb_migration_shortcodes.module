@@ -88,7 +88,7 @@ function ucb_migration_shortcodes_theme() {
     ],
     // Countdown.
     'shortcode_countdown' => [
-      'variables' => ['style' => NULL, 'text' => ''],
+      'variables' => ['style' => NULL, 'size' => NULL, 'background' => NULL, 'text' => ''],
     ],
     // Blockquote.
     'shortcode_blockquote' => [

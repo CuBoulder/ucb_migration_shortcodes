@@ -1337,7 +1337,6 @@ div.image-caption p:first-child {
 .countdown-stacked .countdown-days {
   font-size: 200%;
   display: table;
-  width:100%;
 }
 .countdown-stacked .countdown-days .countdown-value {
   font-weight: 900;

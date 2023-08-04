@@ -118,15 +118,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
         // Time calculations for days, hours, minutes and seconds
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var daysHTML = "<div class='countdown-days'><span class = 'countdown-value'>" + days + "</span><span class = 'countdown-label'> Days</span></div>";
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var hoursHTML = "<div class='countdown-hours'><span class = 'countdown-value'>" + hours + "</span><span class = 'countdown-label'> Hours</span></div>";
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var minutesHTML = "<div class='countdown-minutes'><span class = 'countdown-value'>" + minutes + "</span><span class = 'countdown-label'> Minutes</span></div>";
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var secondsHTML = "<div class='countdown-seconds'><span class = 'countdown-value'>" + seconds + "</span><span class = 'countdown-label'> Seconds</span></div>";
       
-        // Display the result in the element with id="demo"
-        counter.innerText = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+        counter.innerHTML = daysHTML + hoursHTML + minutesHTML + secondsHTML;
+
       
-        // If the count down is finished, write some text
         if (distance < 0) {
           clearInterval(x);
           counter.innerHTML = "DONE";
