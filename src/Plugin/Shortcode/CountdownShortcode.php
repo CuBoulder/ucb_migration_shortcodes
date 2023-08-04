@@ -28,7 +28,7 @@ class CountdownShortcode extends ShortcodeBase {
     );
 
     $output = [
-      '#theme' => 'shortcode_box',
+      '#theme' => 'shortcode_countdown',
       '#text' => $text,
       '#style' => $attributes['style'],
     ];

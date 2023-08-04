@@ -10,7 +10,7 @@ use Drupal\shortcode\Plugin\ShortcodeBase;
  *
  * @Shortcode(
  *   id = "listitem",
- *   title = @Translation("ListItem"),
+ *   title = @Translation("List Item"),
  * )
  */
 class ListItemShortcode extends ShortcodeBase {

@@ -1328,11 +1328,9 @@ div.image-caption p:first-child {
 /*** Countdown ***/
 
 .cu-countdown.style-stacked {
-  style: stacked;
 
 }
 
 .cu-countdown.style-inline {
-  style: float;
 
 }
