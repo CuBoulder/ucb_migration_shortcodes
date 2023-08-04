@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the blockquote shortcode.
+ *
+ * Available variables:
+ * - text
+ * - icon
+ * - style
+ * - float
+ */
+#}	
+
+
+<blockquote class="cu-blockquote margin-bottom float-{{ float }} text-{{ style }} "> 
+	{% if icon %}
+		<i class="fa {{ icon }}"> </i>
+	{% endif %}
+    {{text}}
+    </blockquote>
