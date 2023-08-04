@@ -1270,3 +1270,69 @@ div.image-caption p:first-child {
 .masonry-images img { display: inline-block; margin: 0 0 20px; padding: 0; float: none; width: 100%; height: auto; }
 
 .masonry-images p { margin: 0; padding: 0; }
+
+
+
+/*** Blockquote ***/
+.cu-blockquote.float-left {
+  float: left;
+}
+
+.cu-blockquote.float-right {
+  float: right;
+}
+
+.cu-blockquote.text-serif {
+  font-style: serif;
+}
+
+.cu-blockquote.text-sans-serif {
+  font-style: sans-serif;
+}
+
+/*** Column List and List Item ***/
+.column-list-2 ul{
+  -webkit-columns: 2;
+  -mox-columns: 2;
+  columns: 2;
+}
+.column-list-3 ul{
+  -webkit-columns: 3;
+  -mox-columns: 3;
+  columns: 3;
+}
+.column-list-4 ul{
+  -webkit-columns: 4;
+  -mox-columns: 4;
+  columns: 4;
+}
+@media screen and (min-width: 480px) {
+  .column-list ul, .column-list ol {
+  list-style: none;
+  list-style-image: none;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  }
+  .column-list ul li, .column-list ol li {
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    list-style-image: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+}
+/*** Countdown ***/
+
+.cu-countdown.style-stacked {
+  style: stacked;
+
+}
+
+.cu-countdown.style-inline {
+  style: float;
+
+}

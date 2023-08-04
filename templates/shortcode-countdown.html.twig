@@ -1,13 +1,14 @@
 {#
 /**
  * @file
- * Default theme implementation for the countup shortcode.
+ * Default theme implementation for the countdown shortcode.
  *
  * Available variables:
  * - text (the date)
+ * - style (inline/float)
  */
 #}	
 
-<span class="countdown">
+<span class="cu-countdown style-{{ style }}">
 	{{ text }}
 </span>

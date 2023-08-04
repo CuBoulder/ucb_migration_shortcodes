@@ -10,7 +10,7 @@ use Drupal\shortcode\Plugin\ShortcodeBase;
  *
  * @Shortcode(
  *   id = "ColumnList",
- *   title = @Translation("ColumnList"),
+ *   title = @Translation("Column List"),
  * )
  */
 class ColumnListShortcode extends ShortcodeBase {

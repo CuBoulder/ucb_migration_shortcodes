@@ -84,7 +84,7 @@ function ucb_migration_shortcodes_theme() {
     ],
     // List Item.
     'shortcode_listitem' => [
-      'variables' => [text' => ''],
+      'variables' => ['text' => ''],
     ],
     // Countdown.
     'shortcode_countdown' => [
@@ -92,7 +92,7 @@ function ucb_migration_shortcodes_theme() {
     ],
     // Blockquote.
     'shortcode_blockquote' => [
-      'variables' => ['style' => NULL, 'float' => NULL, 'icon' => NULL, 'text' => '',],
+      'variables' => ['style' => NULL, 'float' => NULL, 'icon' => NULL, 'text' => ''],
     ],
     // Masonry Images.
     'shortcode_masonryimages' => [
