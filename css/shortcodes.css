@@ -1326,7 +1326,7 @@ div.image-caption p:first-child {
   }
 }
 /*** Countdown ***/
-.countdown {
+.cu-countdown {
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -1353,10 +1353,10 @@ div.image-caption p:first-child {
 }
 .countdown-stacked .countdown-bottom {
   display: table;
-  width:100%;
   border-top:1px solid #e7e7e7;
   padding-top: 10px;
   margin-top: 10px;
+  width: 100%;
 }
 .countdown-stacked .countdown-hours,
 .countdown-stacked .countdown-minutes,
@@ -1454,6 +1454,7 @@ div.image-caption p:first-child {
 .countdown-solid .countdown-value {
   color:#cfb87c;
 }
+
 .countdown-solid.countdown-stacked .countdown-bottom {
   border-top:1px solid #444;
 }

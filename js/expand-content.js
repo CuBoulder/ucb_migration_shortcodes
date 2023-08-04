@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var counters = document.querySelectorAll('.cu-countdown');
     for (const counter of counters) {
       var countDownDate = new Date(counter.innerText).getTime();
+      
       setInterval(function() {
         var now = new Date().getTime();
         var distance = countDownDate - now;
@@ -129,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         var secondsHTML = "<div class='countdown-seconds'><span class = 'countdown-value'>" + seconds + "</span><span class = 'countdown-label'> Seconds</span></div>";
       
-        counter.innerHTML = daysHTML + hoursHTML + minutesHTML + secondsHTML;
+        counter.innerHTML = daysHTML + "<div class='countdown-bottom'>" + hoursHTML + minutesHTML + secondsHTML +"</div>";
 
       
         if (distance < 0) {
