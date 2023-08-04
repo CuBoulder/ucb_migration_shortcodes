@@ -119,6 +119,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Time calculations for days, hours, minutes and seconds
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var daysHTML = "<div class='countdown-days'><span class = 'countdown-value'>" + days + "</span><span class = 'countdown-label'> Days</span></div>";
+        if( days == 1) {
+          var daysHTML = "<div class='countdown-days'><span class = 'countdown-value'>" + days + "</span><span class = 'countdown-label'> Day</span></div>";
+        } 
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var hoursHTML = "<div class='countdown-hours'><span class = 'countdown-value'>" + hours + "</span><span class = 'countdown-label'> Hours</span></div>";
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
