@@ -13,3 +13,11 @@ This module requires the Shortcode module with patch 11 installed to run properl
 - Image Caption
 - Give
 - Map
+- Button Group
+- Invisible
+- Google Calendar
+- Print
+- Clear
+- Close Margin
+- Responsive Table
+- Masonry Images

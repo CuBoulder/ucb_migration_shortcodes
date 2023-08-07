@@ -2,6 +2,8 @@ shortcodes-library:
   version: 1.x
   js:
     js/expand-content.js: {}
+    js/v4-shims.min.js: {}
   css:
     theme:
       css/shortcodes.css: {}
+      css/v4-shims.min.css: {}
