@@ -9,7 +9,7 @@ use Drupal\shortcode\Plugin\ShortcodeBase;
  * Creat a box for content with a title and text area.
  *
  * @Shortcode(
- *   id = "ColumnList",
+ *   id = "columnlist",
  *   title = @Translation("Column List"),
  * )
  */
