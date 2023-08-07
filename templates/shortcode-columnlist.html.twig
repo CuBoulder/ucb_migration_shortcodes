@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the buttongroup shortcode.
+ *
+ * Available variables:
+ * - columns: The number of columns.
+ * - text: The text.
+ */
+#}
+
+<div class="column-list column-list-{{ columns }}">
+	<ul>
+		{{ text|striptags('<li>')|t }}
+	</ul>
+</div>

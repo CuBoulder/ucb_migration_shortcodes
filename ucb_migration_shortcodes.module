@@ -78,6 +78,22 @@ function ucb_migration_shortcodes_theme() {
     'shortcode_responsivetable' => [
       'variables' => ['breakpoint' => NULL, 'text' => ''],
     ],
+    // Column List.
+    'shortcode_columnlist' => [
+      'variables' => ['columns' => NULL, 'text' => ''],
+    ],
+    // List Item.
+    'shortcode_listitem' => [
+      'variables' => ['text' => ''],
+    ],
+    // Countdown.
+    'shortcode_countdown' => [
+      'variables' => ['style' => NULL, 'size' => NULL, 'background' => NULL, 'text' => ''],
+    ],
+    // Blockquote.
+    'shortcode_blockquote' => [
+      'variables' => ['style' => NULL, 'float' => NULL, 'icon' => NULL, 'text' => ''],
+    ],
     // Masonry Images.
     'shortcode_masonryimages' => [
       'variables' => ['columns' => NULL, 'text' => ''],
