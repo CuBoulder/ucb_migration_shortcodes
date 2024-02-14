@@ -28,7 +28,7 @@
 	<div class="cu-box margin-bottom box-{{ color }} float-{{ float }} {{ style }} border-{{ bgColor }}">
 {% endif %}
 	{% if title %}
-		<div class="box-title padding ">{{ title }}</div>
+		<div class="box-title padding ">{{ title|t }}</div>
 	{% endif %}
-	<div class="box-content padding clearfix">{{ text }}</div>
+	<div class="box-content padding clearfix">{{ text|t }}</div>
 </div>

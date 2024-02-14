@@ -15,10 +15,10 @@
 {% if style == "tooltip" %}
 
 	<span class="tooltip-expand-set">
-		<a href="#expand-{{ expandID }}" class="tooltip-expand-title tipid-expand-{{ expandID }}" aria-expanded="false">{{ title }}&nbsp;<i class="fa fa-plus-square"></i>
+		<a href="#expand-{{ expandID }}" class="tooltip-expand-title tipid-expand-{{ expandID }}" aria-expanded="false">{{ title|t }}&nbsp;<i class="fa fa-plus-square"></i>
 		</a>
 		<span id="expand-{{ expandID }}" class="tooltip-expand-content" style="display: none;">
-			<span class="tooltip-inner">{{ text }}<br><a href="#expand-{{ expandID }}" class="close-tip" rel="tipid-expand-{{ expandID }}">
+			<span class="tooltip-inner">{{ text|t }}<br><a href="#expand-{{ expandID }}" class="close-tip" rel="tipid-expand-{{ expandID }}">
 					<i class="fa fa-times"></i>
 				</a>
 			</span>d
@@ -28,9 +28,9 @@
 {% elseif style == "small" %}
 
 	<div class="small-expand-set">
-		<a href="#expand-{{ expandID }}" class="small-expand-title" aria-expanded="false">{{ title }}&nbsp;<i class="fa fa-plus-square"></i>
+		<a href="#expand-{{ expandID }}" class="small-expand-title" aria-expanded="false">{{ title|t }}&nbsp;<i class="fa fa-plus-square"></i>
 		</a>
-		<div id="expand-{{ expandID }}" class="small-expand-content" style="display: none;">Lorem ipsum dolor sit amet, egestas ut lacus torquent quis arcu eu, in accumsan eu leo, odio amet adipiscing aliquam at occaecat id, fringilla sed. Dignissim integer etiam, velit mauris dolor sed donec quam.</div>
+		<div id="expand-{{ expandID }}" class="small-expand-content" style="display: none;">{{ text|t }}</div>
 	</div>
 
 {% else %}
@@ -38,10 +38,10 @@
 	<div class="expand-set">
 		<div>
 			<a href="#expand-{{ expandID }}" class="expand-title expand-trigger" aria-expanded="false">
-				<span class="expand">{{ title }}</span>
+				<span class="expand">{{ title|t }}</span>
 			</a>
 		</div>
-		<div id="expand-{{ expandID }}" class="expand-content" style="display: none;">{{ text }}</div>
+		<div id="expand-{{ expandID }}" class="expand-content" style="display: none;">{{ text|t }}</div>
 	</div>
 
 {% endif %}
