@@ -150,9 +150,7 @@
 
 /*** EXPANDABLE CONTENT ***/
 
-/* ACCORDION & Expand shortcode*/
-.ui-accordion h3.ui-accordion-header,
-.ui-accordion .ui-accordion-header,
+/* Expand shortcode*/
 .expand-set {
   background-image: none;
   background-color: transparent;
@@ -164,28 +162,15 @@
   overflow: auto;
 }
 
-.ui-accordion h3.ui-accordion-header.ui-state-active,
-.ui-accordion .ui-accordion-header.ui-state-active {
-  border: none;
-}
-
-.ui-accordion .ui-accordion-header .ui-icon {
+.expand-set a.expand-title>i,
+.expand-set a.expand-title>svg {
   display: none;
 }
 
-.ui-accordion .ui-accordion-header .ui-icon:before {
-  content: "\f002 ";
-  /* this is the Unicode for the icon */
-  font-family: "Font Awesome 5 Free";
-  /* font family is included in Canvas Framework */
-  margin-right: 0.5em;
-}
-
-.ui-accordion h3.ui-accordion-header a,
-.ui-accordion .ui-accordion-header a,
 .expand-set a.expand-title {
   display: flex;
   flex-direction: row;
+  align-items: center;
   background-image: none;
   background-color: transparent;
   padding: 10px 10px 10px 0px;
@@ -193,31 +178,26 @@
   text-decoration: none;
 }
 
-.ui-accordion h3.ui-accordion-header a:before,
-.ui-accordion .ui-accordion-header a:before,
-.expand-set a.expand-title:before {
-  content: "\f0fe";
-  font-family: "Font Awesome 5 Free";
+.expand-set a.expand-title>i,
+.expand-set a.expand-title>svg {
   margin-right: 5px;
   margin-left: 1px;
-  font-weight: normal !important;
 }
 
 .expand-set a.expand-title {
   font-size: 110%;
+  line-height: 1.4em;
 }
 
-.ui-accordion h3.ui-accordion-header.ui-state-active a:before,
-.ui-accordion .ui-accordion-header.ui-state-active a:before,
-.expand-set a.expand-active:before {
-  content: "\f146";
+.expand-set a.expand-active>.fa-square-minus,
+.expand-set a:not(.expand-active)>.fa-square-plus {
+  display: inline-block;
 }
 
 .expand-set a.expand-active {
   font-weight: bold;
 }
 
-.ui-accordion .ui-accordion-content,
 .expand-set .expand-content {
   border: 1px solid rgba(128, 128, 128, 0.333);
   padding: 10px;
@@ -825,9 +805,8 @@ a:hover .icon-color-gold.icon-wrapper-circle {
   font-weight: bold;
   text-decoration: none;
 }
-.embed-map-label:before {
-  content: "\f14c";
-  font-family: "Font Awesome 5 Free";
+.embed-map-label>i,
+.embed-map-label>svg {
   margin-right: 5px;
 }
 
