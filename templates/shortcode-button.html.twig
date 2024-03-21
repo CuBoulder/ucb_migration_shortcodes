@@ -14,9 +14,9 @@
  */
 #}
 
-<a href="{{ link }}" title="Button: {{ title }}" class="button button-{{ style  }} button-{{ size }} button-{{ color }}">
-	{% if ico %}
-		<i class="fa {{ ico }}"> </i>
-	{% endif %}
-	{{ text }}
+<a href="{{ link }}" title="Button: {{ title|t }}" class="button button-{{ style }} button-{{ size }} button-{{ color }}">
+  {% if ico %}
+    <i class="fa {{ ico }}"> </i>
+  {% endif %}
+  {{ text|t }}
 </a>
