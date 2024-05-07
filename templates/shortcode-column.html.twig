@@ -8,17 +8,15 @@
  * - size
  * - order
  */
-#}	
+#}
 
 {% if order != "last" %}
-<div class="content-column column-{{ size }} {{ order }}">
-	{{ text|t }}
-	<p>Test: column 1</p>
-</div>
+  <div class="content-column column-{{ size }} {{ order }}">
+    {{ text|t }}
+  </div>
 {% else %}
-<div class="content-column column-{{ size }} {{ order }}">
-	{{ text|t }}
-	<p>Test: column last</p>
-</div>
-<p class="clear-fix"></p>
+  <div class="content-column column-{{ size }} {{ order }}">
+    {{ text|t }}
+  </div>
+  <p class="clear-fix"></p>
 {% endif %}
