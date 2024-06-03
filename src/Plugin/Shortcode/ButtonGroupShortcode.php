@@ -76,6 +76,7 @@ class ButtonGroupShortcode extends ShortcodeBase {
   protected function processNestedShortcodes($text, $langcode) {
     $shortcode_tags = [
       // Here's where we can put allowed shortcodes
+      'button' => 'Drupal\ucb_migration_shortcodes\Plugin\Shortcode\ButtonShortcode',
       'icon' => 'Drupal\ucb_migration_shortcodes\Plugin\Shortcode\IconShortcode',
     ];
 
@@ -114,4 +115,3 @@ class ButtonGroupShortcode extends ShortcodeBase {
     return $attributes;
   }
 }
-
