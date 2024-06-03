@@ -9,9 +9,9 @@
  * - text: The buttons.
  */
 #}
-
+<p>{{color}}</p>
 <div class="buttongroup buttongroup-size-{{ size }} buttongroup-color-{{ color }}">
-	<div class="button-group-content"> 
-		{{ text|striptags('<a>')|t }}
+	<div class="button-group-content">
+		{{ text|t }}
 	</div>
 </div>

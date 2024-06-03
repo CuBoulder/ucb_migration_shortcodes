@@ -991,17 +991,17 @@ div.image-caption p:first-child {
   font-weight: bold;
 }
 
-.buttongroup-color-blue {
+.buttongroup-color-primary {
   background-color: #01578b;
 }
 
-.buttongroup-color-blue a.button {
+.buttongroup-color-primary a.button {
   background-color: #0277bd;
   color: #fff !important;
 }
 
-.buttongroup-color-blue a.button:hover,
-.buttongroup-color-blue a.button:focus {
+.buttongroup-color-primary a.button:hover,
+.buttongroup-color-primary a.button:focus {
   background-color: #026dae;
   background-color: #026baa;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -1009,7 +1009,7 @@ div.image-caption p:first-child {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.buttongroup-color-blue a.button:active {
+.buttongroup-color-primary a.button:active {
   -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
