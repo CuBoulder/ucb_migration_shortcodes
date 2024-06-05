@@ -187,6 +187,7 @@
 .expand-set a.expand-title {
   font-size: 110%;
   line-height: 1.4em;
+  color: inherit;
 }
 
 .expand-set a.expand-active>.fa-square-minus,
@@ -196,6 +197,7 @@
 
 .expand-set a.expand-active {
   font-weight: bold;
+  color: inherit;
 }
 
 .expand-set .expand-content {
