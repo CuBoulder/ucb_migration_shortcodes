@@ -2,6 +2,7 @@ shortcodes-library:
   version: 1.x
   js:
     js/expand-content.js: {}
+    js/countup.js: {}
   css:
     theme:
       css/shortcodes.css: {}
