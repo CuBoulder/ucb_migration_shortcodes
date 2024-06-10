@@ -73,7 +73,7 @@ class ButtonShortcode extends ShortcodeBase {
       '#ico' => $attributes['icon'],
     ];
 
-    return $this->renderer->renderRoot($output);
+    return $this->renderer->render($output);
   }
 
   /**
@@ -102,7 +102,7 @@ class ButtonShortcode extends ShortcodeBase {
           $content = $match[2];
           $shortcode = new $class();
           $render_array = $shortcode->process($attributes, $content, $langcode);
-          $replacement = $this->renderer->renderRoot($render_array);
+          $replacement = $this->renderer->render($render_array);
           $text = str_replace($match[0], $replacement, $text);
         }
       }
