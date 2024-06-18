@@ -9,8 +9,14 @@
  * - background (solid/transparent)
  * - size (regular/full)
  */
-#}	
+#}
 
-<div aria-hidden="true" class="cu-countdown countdown-{{ style }} countdown-{{ size }} countdown-{{ background }}">
-	{{ text|t }}
-</div>
+{% if style is empty %}
+{% set style = 'inline'%}
+{% endif %}
+
+{% if background is empty %}
+{% set background = 'transparent'%}
+{% endif %}
+
+<span class="ucb-countdown countdown-{{ style }} countdown-{{ background }}" aria-hidden="true">{{ text|t }}</span>
