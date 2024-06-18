@@ -10,13 +10,7 @@
 #}
 
 {% if mapfragment %}
-	<div class="embed-map-static embed-map-size-{{ size }}" data-map-location="{{ mapfragment }}" style="background-image: url('https://staticmap.concept3d.com/map/static-map/?map=336&amp;loc={{ mapfragment }}')">
-		<a class="map-link" href="https://www.colorado.edu/map/?id={{ maplocation}}#!m/{{ mapfragment }}">
-			<span>View location on the Campus Map</span>
-		</a>
-	</div>
+  <ucb-map class="ucb-map ucb-campus-map ucb-map-size-{{ size }}" data-map-location="{{ mapfragment }}">&nbsp;</ucb-map>
 {% else %}
-	<div class="google-map-embed">
-		<iframe class="map-{{ size }}" src="https://www.google.com/maps/embed?pb={{ maplocation }}" loading="lazy" referrerpolicy="no-referrer"></iframe>
-	</div>
+  <ucb-map class="ucb-map ucb-google-map ucb-map-size-{{ size }}" data-map-location="{{ maplocation }}">&nbsp;</ucb-map>
 {% endif %}

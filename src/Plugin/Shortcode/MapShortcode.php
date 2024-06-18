@@ -13,14 +13,12 @@ use Drupal\shortcode\Plugin\ShortcodeBase;
  *   title = @Translation("Map"),
  * )
  */
-class MapShortcode extends ShortcodeBase
-{
+class MapShortcode extends ShortcodeBase {
 
   /**
    * {@inheritdoc}
    */
-  public function process(array $attributes, $text, $langcode = Language::LANGCODE_NOT_SPECIFIED)
-  {
+  public function process(array $attributes, $text, $langcode = Language::LANGCODE_NOT_SPECIFIED) {
 
     // Merge with default attributes.
     $attributes = $this->getAttributes(
@@ -34,24 +32,28 @@ class MapShortcode extends ShortcodeBase
     parse_str($parts['query'], $query);
     $mapLocation = '';
     $mapFragment = '';
-    if (array_key_exists("pb",$query)) {
+    if (array_key_exists("pb", $query)) {
       $mapLocation = $query['pb'];
-    } elseif (array_key_exists("id",$query)) {
+    }
+    elseif (array_key_exists("id", $query)) {
       $mapLocation = $query['id'];
       $mapFragment = $parts['fragment'];
-      $mapFragment = preg_replace('/[^0-9]/', '', $mapFragment);
-    } else {
+      preg_match('/m\/(\d+)/', $mapFragment, $mapFragment, PREG_OFFSET_CAPTURE);
+      $mapFragment = $mapFragment[1][0];
+    }
+    else {
       $mapLocation = 'none';
     }
 
-
+    $size = $attributes['size'];
     $output = [
       '#theme' => 'shortcode_map',
       '#text' => $text,
-      '#size' => $attributes['size'],
+      '#size' => $size == 'small' || $size == 'medium' || $size == 'large' ? $size : 'medium',
       '#maplocation' => $mapLocation,
-      '#mapfragment' => $mapFragment
+      '#mapfragment' => $mapFragment,
     ];
     return $this->render($output);
   }
+
 }
