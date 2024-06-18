@@ -49,7 +49,7 @@ class MapShortcode extends ShortcodeBase {
     $output = [
       '#theme' => 'shortcode_map',
       '#text' => $text,
-      '#size' => $size == 'small' || $size == 'medium' || $size == 'large' ? $size : 'medium',
+      '#size' => $size == 'small' || $size == 'medium' || $size == 'large' ? $size : 'small',
       '#maplocation' => $mapLocation,
       '#mapfragment' => $mapFragment,
     ];
