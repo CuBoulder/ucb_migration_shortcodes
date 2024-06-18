@@ -8,8 +8,5 @@
  */
 #}
 
-<div class="responsive-table-wrapper responsive-table-{{ breakpoint }}px">
-	<div class="responsive-table-wrapper-inner">
-		{{ text|striptags('<table><tbody><tr><td>')|t }}
-	</div>
-</div>
+
+{{ text|striptags('<table><tbody><tr><td><img>')|t }}
