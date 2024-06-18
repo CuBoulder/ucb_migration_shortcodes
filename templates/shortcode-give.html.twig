@@ -11,14 +11,20 @@
 #}
 
 {% if color == "dark" %}
-	{% set bgColor = "gray-dark" %}
+  {% set bgColor = "black" %}
 {% elseif color == "light" %}
-	{% set bgColor = "gray-light" %}
+  {% set bgColor = "gray" %}
 {% else %}
-	{% set bgColor = "gold" %}
+  {% set bgColor = "gold" %}
 {% endif %}
 
-<a href="{{ link }}" title="Donation Button" class="button cu-give-button button-{{ style }} button-{{ size }} button-{{ bgColor }}">
-	<i class="icon-cu"></i>
-	{{ text|t }}
-</a>
+{% if style == "regular" %}
+  {% set style = "default" %}
+{% endif %}
+
+
+<p>
+  <a class="ucb-link-button ucb-link-button-{{ bgColor }} ucb-link-button-{{ size }} ucb-link-button-{{ style }}" href="{{ link }}">
+    <span class="ucb-link-button-contents">{{ text|t }}</span>
+  </a>
+</p>
