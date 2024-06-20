@@ -12,23 +12,14 @@
  */
 #}	
 
-{% if color == "lightgray" %}
-	{% set bgColor = "gray-light" %}
-{% elseif color == "darkgray" %}
-	{% set bgColor = "gray-dark" %}
-{% elseif color == "black" %}
-	{% set bgColor = "black" %}
-{% else %}
-	{% set bgColor = "white" %}
+{% set correctedStyle = style %}
+{% if style == "border" } 
+	{% set correctedStyle = "outline" %}
 {% endif %}
 
-{% if style == "filled" %}
-	<div class="cu-box margin-bottom box-{{ color }} float-{{ float }} {{ style }} background-{{ bgColor }}">
-{% else %}
-	<div class="cu-box margin-bottom box-{{ color }} float-{{ float }} {{ style }} border-{{ bgColor }}">
-{% endif %}
-	{% if title %}
-		<div class="box-title padding ">{{ title|t }}</div>
-	{% endif %}
-	<div class="box-content padding clearfix">{{ text|t }}</div>
+<div class="ucb-box ucb-box-title-left ucb-box-alignment-{{ float }} ucb-box-style-{{ correctedStyle }} ucb-box-theme-{{ color }}">
+	<div class="ucb-box-inner">
+		<div class="ucb-box-title">{{ title|t }}</div>
+		<div class="ucb-box-content">{{ text|t }}</div>
+	</div>
 </div>
