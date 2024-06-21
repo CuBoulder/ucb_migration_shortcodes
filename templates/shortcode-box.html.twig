@@ -22,9 +22,9 @@
     {% set correctedColor = color %}
 {% endif %}
 
-{% set correctedStyle = "filled" %}
+{% set correctedStyle = "fill" %}
 {% if style == "filled" %} 
-    {% set correctedStyle = "filled" %}
+    {% set correctedStyle = "fill" %}
 {% elseif style == "border" %} 
     {% set correctedStyle = "outline" %}
 {% endif %}
