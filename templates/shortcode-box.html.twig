@@ -10,23 +10,35 @@
  * - style
  * - float
  */
-#}	
+#}  
 
-{% set correctedStyle = style %}
-{% if style == "border" } 
-	{% set correctedStyle = "outline" %}
+{% set correctedFloat = "none" %}
+{% if float in ["none", "left", "right"] %} 
+    {% set correctedFloat = float %}
+{% endif %}
+
+{% set correctedColor = "lightgray" %}
+{% if color in ["lightgray", "darkgray", "black", "white"] %} 
+    {% set correctedColor = color %}
+{% endif %}
+
+{% set correctedStyle = "filled" %}
+{% if float == "filled" %} 
+    {% set correctedStyle = "filled" %}
+{% elseif style == "border" } 
+    {% set correctedStyle = "outline" %}
 {% endif %}
 
 
 {% set correctedTitle = "none" %}
 {% if title  %} 
-	{% set correctedTitle = "left" %}
+    {% set correctedTitle = "left" %}
 {% endif %}
 
-	
-<div class="ucb-box ucb-box-title-{{ correctedTitle }} ucb-box-alignment-{{ float }} ucb-box-style-{{ correctedStyle }} ucb-box-theme-{{ color }}">
-	<div class="ucb-box-inner">
-		<div class="ucb-box-title">{{ title|t }}</div>
-		<div class="ucb-box-content">{{ text|t }}</div>
-	</div>
+    
+<div class="ucb-box ucb-box-title-{{ correctedTitle }} ucb-box-alignment-{{ float }} ucb-box-style-{{ correctedStyle }} ucb-box-theme-{{ correctedColor }}">
+    <div class="ucb-box-inner">
+        <div class="ucb-box-title">{{ title|t }}</div>
+        <div class="ucb-box-content">{{ text|t }}</div>
+    </div>
 </div>
