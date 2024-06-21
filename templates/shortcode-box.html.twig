@@ -17,7 +17,14 @@
 	{% set correctedStyle = "outline" %}
 {% endif %}
 
-<div class="ucb-box ucb-box-title-left ucb-box-alignment-{{ float }} ucb-box-style-{{ correctedStyle }} ucb-box-theme-{{ color }}">
+
+{% set correctedTitle = "none" %}
+{% if title  %} 
+	{% set correctedTitle = "left" %}
+{% endif %}
+
+	
+<div class="ucb-box ucb-box-title-{{ correctedTitle }} ucb-box-alignment-{{ float }} ucb-box-style-{{ correctedStyle }} ucb-box-theme-{{ color }}">
 	<div class="ucb-box-inner">
 		<div class="ucb-box-title">{{ title|t }}</div>
 		<div class="ucb-box-content">{{ text|t }}</div>
