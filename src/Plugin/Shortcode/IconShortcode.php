@@ -82,8 +82,14 @@ class IconShortcode extends ShortcodeBase {
     $userWrapper = $attributes['wrapper'];
 
     // These are the supported non-default colors.
-    if ($userColor == 'black' || $userColor == 'white' || $userColor == 'light-gray' || $userColor == 'gray' || $userColor == 'dark-gray' || $userColor == 'gold') {
+    if ($userColor == 'black' || $userColor == 'white' || $userColor == 'gray' || $userColor == 'gold') {
       $color = $userColor;
+    }
+    elseif ($userColor == 'light-gray') {
+      $color = 'lightgray';
+    }
+    elseif ($userColor == 'dark-gray') {
+      $color = 'darkgray';
     }
 
     // These are the supported non-default sizes.
@@ -98,7 +104,7 @@ class IconShortcode extends ShortcodeBase {
 
     // These are the supported non-default wrappers.
     if ($userWrapper == 'square' || $userWrapper == 'circle') {
-      $wrapper = $userPull;
+      $wrapper = $userWrapper;
     }
     elseif ($userWrapper == 'rounded') {
       $wrapper = 'square-rounded';
