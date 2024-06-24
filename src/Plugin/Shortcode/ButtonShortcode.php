@@ -3,9 +3,9 @@
 namespace Drupal\ucb_migration_shortcodes\Plugin\Shortcode;
 
 use Drupal\Core\Language\Language;
+use Drupal\Core\Render\RendererInterface;
 use Drupal\shortcode\Plugin\ShortcodeBase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Render\RendererInterface;
 
 /**
  * The button shortcode.
@@ -60,16 +60,33 @@ class ButtonShortcode extends ShortcodeBase {
     // Process nested shortcodes in the text content manually.
     $processed_text = $this->processNestedShortcodes($text, $langcode);
 
+    $color = 'blue';
+    $style = 'default';
+    $size = 'regular';
+
+    $userColor = $attributes['color'];
+    $userStyle = $attributes['style'];
+    $userSize = $attributes['size'];
+
+    if ($userColor == 'black' || $userColor == 'gray' || $userColor == 'white' || $userColor == 'gold') {
+      $color = $userColor;
+    }
+    if ($userStyle == 'full') {
+      $style = $userStyle;
+    }
+    if ($userSize == 'small' || $userSize == 'large') {
+      $size = $userSize;
+    }
+
     $output = [
       '#theme' => 'shortcode_button',
       '#link' => $attributes['url'],
-      '#title' => strip_tags($processed_text),
       '#text' => [
         '#markup' => $processed_text,
       ],
-      '#color' => $attributes['color'],
-      '#style' => $attributes['style'],
-      '#size' => $attributes['size'],
+      '#color' => $color,
+      '#style' => $style,
+      '#size' => $size,
       '#ico' => $attributes['icon'],
     ];
 
@@ -87,10 +104,9 @@ class ButtonShortcode extends ShortcodeBase {
    * @return string
    *   The processed text with shortcodes rendered.
    */
-  // Simple shortcode processing logic.
   protected function processNestedShortcodes($text, $langcode) {
     $shortcode_tags = [
-      // Here's where we can put allowed shortcodes
+      // Here's where we can put allowed shortcodes.
       'icon' => 'Drupal\ucb_migration_shortcodes\Plugin\Shortcode\IconShortcode',
     ];
 
@@ -128,4 +144,5 @@ class ButtonShortcode extends ShortcodeBase {
     }
     return $attributes;
   }
+
 }
