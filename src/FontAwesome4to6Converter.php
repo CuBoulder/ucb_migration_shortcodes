@@ -124,7 +124,43 @@ class FontAwesome4to6Converter {
     if (!$faClasses) {
       return '';
     }
-    return 'fa ' . $faClasses;
+    $icons = $this->getFontAwesomeIcons();
+    $conversions = $this->getFontAwesomeConversions();
+    $fa4ClassNames = preg_split('/\s+/', $faClasses);
+    $fa6ClassNames = [];
+    $iconMatched = FALSE;
+    foreach ($fa4ClassNames as $fa4ClassName) {
+      if (preg_match('/fa-((2xs|xs|sm|lg|xl|2xl|([0-9]|10)x)|beat-fade|bounce|border|fade|flip-(horizontal|vertical|both)|fw|inverse|li|pull-(left|right)|rotate-(90|180|270|by)|shake|spin(-(pulse|reverse))?|sr-only(-focusable)?|stack(-(1|2)x)?|ul)/', $fa4ClassName)) {
+        // Matches a non-icon Font Awesome class supported in Font Awesome 6.
+        // Not all of these are valid for icons but it's unlikely most of them
+        // will be present.
+        $fa6ClassNames[] = $fa4ClassName;
+      }
+      elseif (!$iconMatched && preg_match('/fa-([a-z0-9\-]+)/', $fa4ClassName, $faMatch)) {
+        // Matches an icon Font Awesome class.
+        $fa4IconName = $faMatch[1];
+        if (isset($conversions[$fa4IconName])) {
+          $conversion = $conversions[$fa4IconName];
+          $fa6ClassNames[] = 'fa-' . $conversion['style'];
+          $fa6ClassNames[] = 'fa-' . $conversion['name'];
+        }
+        elseif (isset($icons[$fa4IconName])) {
+          $icon = $icons[$fa4IconName];
+          $fa6ClassNames[] = 'fa-' . $icon['styles'][0] ?? 'solid';
+          $fa6ClassNames[] = 'fa-' . $fa4IconName;
+        }
+        else {
+          $fa6ClassNames[] = 'fa-solid';
+          $fa6ClassNames[] = 'fa-' . $fa4IconName;
+        }
+      }
+      $iconMatched = TRUE;
+    }
+    if (!$iconMatched) {
+      // No icon specified results in the flashing question mark.
+      $fa6ClassNames[] = 'fa-solid';
+    }
+    return implode(' ', $fa6ClassNames);
   }
 
 }

@@ -39,7 +39,7 @@ class ButtonShortcode extends ShortcodeBase {
    * @param \Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter $faConverter
    *   The Font Awesome 4 to 6 converter.
    */
-  public function __construct($configuration, $plugin_id, $plugin_definition, RendererInterface $renderer, FontAwesome4to6Converter $faConverter) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, RendererInterface $renderer, FontAwesome4to6Converter $faConverter) {
     parent::__construct($configuration, $plugin_id, $plugin_definition, $renderer);
     $this->faConverter = $faConverter;
   }
