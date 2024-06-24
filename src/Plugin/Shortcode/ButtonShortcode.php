@@ -5,6 +5,7 @@ namespace Drupal\ucb_migration_shortcodes\Plugin\Shortcode;
 use Drupal\Core\Language\Language;
 use Drupal\Core\Render\RendererInterface;
 use Drupal\shortcode\Plugin\ShortcodeBase;
+use Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -25,13 +26,23 @@ class ButtonShortcode extends ShortcodeBase {
   protected $renderer;
 
   /**
+   * The Font Awesome 4 to 6 converter.
+   *
+   * @var \Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter
+   */
+  protected $faConverter;
+
+  /**
    * Constructs a ButtonShortcode object.
    *
    * @param \Drupal\Core\Render\RendererInterface $renderer
    *   The renderer service.
+   * @param \Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter $faConverter
+   *   The Font Awesome 4 to 6 converter.
    */
-  public function __construct(RendererInterface $renderer) {
+  public function __construct(RendererInterface $renderer, FontAwesome4to6Converter $faConverter) {
     $this->renderer = $renderer;
+    $this->faConverter = $faConverter;
   }
 
   /**
@@ -39,7 +50,8 @@ class ButtonShortcode extends ShortcodeBase {
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
     return new static(
-      $container->get('renderer')
+      $container->get('renderer'),
+      $container->get('ucb_migration_shortcodes.font_awesome_converter')
     );
   }
 
@@ -68,12 +80,17 @@ class ButtonShortcode extends ShortcodeBase {
     $userStyle = $attributes['style'];
     $userSize = $attributes['size'];
 
+    // These are the supported non-default colors.
     if ($userColor == 'black' || $userColor == 'gray' || $userColor == 'white' || $userColor == 'gold') {
       $color = $userColor;
     }
+
+    // These are the supported non-default styles.
     if ($userStyle == 'full') {
       $style = $userStyle;
     }
+
+    // These are the supported non-default sizes.
     if ($userSize == 'small' || $userSize == 'large') {
       $size = $userSize;
     }
@@ -87,7 +104,7 @@ class ButtonShortcode extends ShortcodeBase {
       '#color' => $color,
       '#style' => $style,
       '#size' => $size,
-      '#ico' => $attributes['icon'],
+      '#ico' => $this->faConverter->convert($attributes['icon']),
     ];
 
     return $this->renderer->renderRoot($output);

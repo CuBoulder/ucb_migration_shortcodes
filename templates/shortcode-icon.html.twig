@@ -9,7 +9,5 @@
  * - size
  * - wrapper
  */
-#}	
-
-
-<i class="fa {{ shape }} icon-color-{{ color }} {{ size }} icon-wrapper-{{ wrapper }}"> </i>
+#}
+<i{{ create_attribute({ class: [shape, color ?? 'ucb-icon-color-' ~ color, size, pull ?? 'fa-pull-' ~ pull, wrapper ?? 'ucb-icon-style-' ~ wrapper] }) }}">&nbsp;</i>

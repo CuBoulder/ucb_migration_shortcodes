@@ -1,0 +1,4 @@
+services:
+  ucb_migration_shortcodes.font_awesome_converter:
+    class: Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter
+    arguments: ['@cache.data', '@extension.path.resolver']

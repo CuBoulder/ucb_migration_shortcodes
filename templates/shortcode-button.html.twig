@@ -9,14 +9,13 @@
  * - color: The button color.
  * - style: The style of the button.
  * - ico: A FA icon if chosen.
- * - title: The button title attribute.
  * - text: The button text.
  */
 #}
-<a{{ create_attribute({ class: 'ucb-link-button ucb-link-button-' ~ color ~ ' ucb-link-button-' ~ style ~ ' ucb-link-button-' ~ size, href: link }) }}>
+<a{{ create_attribute({ class: ['ucb-link-button', 'ucb-link-button-' ~ color, 'ucb-link-button-' ~ style, 'ucb-link-button-' ~ size], href: link }) }}>
   <span class="ucb-link-button-contents">
-    {% if ico %}{# @todo: Convert icons properly #}
-      <i class="fa {{ ico }}">&nbsp;</i>
+    {% if ico %}
+      <i{{ create_attribute({ class: ico }) }}>&nbsp;</i>
     {% endif %}
     {{ text }}
   </span>
