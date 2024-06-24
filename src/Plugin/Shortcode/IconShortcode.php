@@ -3,6 +3,7 @@
 namespace Drupal\ucb_migration_shortcodes\Plugin\Shortcode;
 
 use Drupal\Core\Language\Language;
+use Drupal\Core\Render\RendererInterface;
 use Drupal\shortcode\Plugin\ShortcodeBase;
 use Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -27,10 +28,19 @@ class IconShortcode extends ShortcodeBase {
   /**
    * Constructs an IconShortcode object.
    *
+   * @param array $configuration
+   *   A configuration array containing information about the plugin instance.
+   * @param string $plugin_id
+   *   The plugin ID for the plugin instance.
+   * @param mixed $plugin_definition
+   *   The plugin implementation definition.
+   * @param \Drupal\Core\Render\RendererInterface $renderer
+   *   The renderer service.
    * @param \Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter $faConverter
    *   The Font Awesome 4 to 6 converter.
    */
-  public function __construct(FontAwesome4to6Converter $faConverter) {
+  public function __construct($configuration, $plugin_id, $plugin_definition, RendererInterface $renderer, FontAwesome4to6Converter $faConverter) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition, $renderer);
     $this->faConverter = $faConverter;
   }
 
@@ -39,6 +49,10 @@ class IconShortcode extends ShortcodeBase {
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
     return new static(
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
+      $container->get('renderer'),
       $container->get('ucb_migration_shortcodes.font_awesome_converter')
     );
   }
@@ -68,11 +82,8 @@ class IconShortcode extends ShortcodeBase {
     $userWrapper = $attributes['wrapper'];
 
     // These are the supported non-default colors.
-    if ($userColor == 'black' || $userColor == 'white' || $userColor == 'light-gray' || $userColor == 'dark-gray' || $userColor == 'gold') {
+    if ($userColor == 'black' || $userColor == 'white' || $userColor == 'light-gray' || $userColor == 'gray' || $userColor == 'dark-gray' || $userColor == 'gold') {
       $color = $userColor;
-    }
-    elseif ($userColor == 'gray') {
-      $color = 'light-gray';
     }
 
     // These are the supported non-default sizes.

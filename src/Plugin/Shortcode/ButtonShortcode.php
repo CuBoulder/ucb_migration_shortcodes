@@ -19,13 +19,6 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class ButtonShortcode extends ShortcodeBase {
 
   /**
-   * The renderer service.
-   *
-   * @var \Drupal\Core\Render\RendererInterface
-   */
-  protected $renderer;
-
-  /**
    * The Font Awesome 4 to 6 converter.
    *
    * @var \Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter
@@ -35,13 +28,19 @@ class ButtonShortcode extends ShortcodeBase {
   /**
    * Constructs a ButtonShortcode object.
    *
+   * @param array $configuration
+   *   A configuration array containing information about the plugin instance.
+   * @param string $plugin_id
+   *   The plugin ID for the plugin instance.
+   * @param mixed $plugin_definition
+   *   The plugin implementation definition.
    * @param \Drupal\Core\Render\RendererInterface $renderer
    *   The renderer service.
    * @param \Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter $faConverter
    *   The Font Awesome 4 to 6 converter.
    */
-  public function __construct(RendererInterface $renderer, FontAwesome4to6Converter $faConverter) {
-    $this->renderer = $renderer;
+  public function __construct($configuration, $plugin_id, $plugin_definition, RendererInterface $renderer, FontAwesome4to6Converter $faConverter) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition, $renderer);
     $this->faConverter = $faConverter;
   }
 
@@ -50,6 +49,9 @@ class ButtonShortcode extends ShortcodeBase {
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
     return new static(
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
       $container->get('renderer'),
       $container->get('ucb_migration_shortcodes.font_awesome_converter')
     );
