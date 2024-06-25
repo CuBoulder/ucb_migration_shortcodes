@@ -56,7 +56,7 @@ class FontAwesome4to6Converter {
     }
     $data = array_map(function ($icon) {
       return [
-        'styles' => $icon['styles'],
+        'styles' => $icon['styles'] ?? ['solid'],
         'label' => $icon['label'],
       ];
     }, Yaml::parseFile($this->extensionPathResolver->getPath('module', 'ucb_migration_shortcodes') . '/libraries/fontawesome' . $faVersion . '/metadata/icons.yml'));
@@ -119,7 +119,7 @@ class FontAwesome4to6Converter {
         }
         elseif (isset($icons[$fa4IconName])) {
           $icon = $icons[$fa4IconName];
-          $fa6ClassNames[] = 'fa-' . $icon['styles'][0] ?? 'solid';
+          $fa6ClassNames[] = 'fa-' . $icon['styles'][0];
           $fa6ClassNames[] = 'fa-' . $fa4IconName;
         }
         else {
