@@ -37,9 +37,15 @@ class MapShortcode extends ShortcodeBase {
     }
     elseif (array_key_exists("id", $query)) {
       $mapLocation = $query['id'];
-      $mapFragment = $parts['fragment'];
-      preg_match('/m\/(\d+)/', $mapFragment, $mapFragment, PREG_OFFSET_CAPTURE);
-      $mapFragment = $mapFragment[1][0];
+      if (preg_match('/m\/(\d+)/', $parts['fragment'], $fragment, PREG_OFFSET_CAPTURE)) {
+        // Matches a campus map.
+        $mapFragment = $fragment[1][0];
+      }
+      elseif (array_key_exists('amp;mrkIid', $query)) {
+        // Old-style campus map URL that doesn't work anymore, but an instance
+        // was found in prod.
+        $mapFragment = preg_replace('/\D/', '', $query['amp;mrkIid']);
+      }
     }
     else {
       $mapLocation = 'none';
