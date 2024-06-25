@@ -9,16 +9,6 @@
  * - text: The button label.
  */
 #}
-
-{% if color == "dark" %}
-	{% set bgColor = "gray-dark" %}
-{% elseif color == "light" %}
-	{% set bgColor = "gray-light" %}
-{% else %}
-	{% set bgColor = "gold" %}
-{% endif %}
-
-<a href="{{ link }}" title="Donation Button" class="button cu-give-button button-{{ style }} button-{{ size }} button-{{ bgColor }}">
-	<i class="icon-cu"></i>
-	{{ text|t }}
+<a class="ucb-link-button ucb-link-button-{{ color }} ucb-link-button-{{ size }} ucb-link-button-{{ style }}" href="{{ link }}">
+  <span class="ucb-link-button-contents">{{ text|raw }}</span>
 </a>
