@@ -77,36 +77,9 @@ class FontAwesome4to6Converter {
     if ($cached) {
       return $cached->data;
     }
-    $data = array_map(function ($icon) {
-      return [
-        'style' => $this->shimPefixToFontAwesome6Style($icon['prefix']),
-        'name' => $icon['name'],
-      ];
-    }, Yaml::parseFile($this->extensionPathResolver->getPath('module', 'ucb_migration_shortcodes') . '/libraries/fontawesome' . $faVersion . '/metadata/shims.yml'));
+    $data = Yaml::parseFile($this->extensionPathResolver->getPath('module', 'ucb_migration_shortcodes') . '/libraries/fontawesome' . $faVersion . '/metadata/conversion.yml');
     $this->dataCache->set($cacheId, $data);
     return $data;
-  }
-
-  /**
-   * Converts the shim prefix to a valid Font Awesome 6 style.
-   *
-   * @param string|null $prefix
-   *   The shim prefix.
-   *
-   * @return string
-   *   The Font Awesome 6 style.
-   */
-  protected function shimPefixToFontAwesome6Style($prefix) {
-    switch ($prefix) {
-      case 'far':
-        return 'fa-regular';
-
-      case 'fab':
-        return 'fa-brands';
-
-      default:
-        return 'fa-solid';
-    }
   }
 
   /**
@@ -141,7 +114,7 @@ class FontAwesome4to6Converter {
         $fa4IconName = $faMatch[1];
         if (isset($conversions[$fa4IconName])) {
           $conversion = $conversions[$fa4IconName];
-          $fa6ClassNames[] = 'fa-' . $conversion['style'];
+          $fa6ClassNames[] = $conversion['style'];
           $fa6ClassNames[] = 'fa-' . $conversion['name'];
         }
         elseif (isset($icons[$fa4IconName])) {
@@ -153,11 +126,11 @@ class FontAwesome4to6Converter {
           $fa6ClassNames[] = 'fa-solid';
           $fa6ClassNames[] = 'fa-' . $fa4IconName;
         }
+        $iconMatched = TRUE;
       }
-      $iconMatched = TRUE;
     }
     if (!$iconMatched) {
-      // No icon specified results in the flashing question mark.
+      // No icon specified, still have it recognized as an icon widget.
       $fa6ClassNames[] = 'fa-solid';
     }
     return implode(' ', $fa6ClassNames);

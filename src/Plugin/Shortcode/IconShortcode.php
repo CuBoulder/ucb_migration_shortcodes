@@ -112,7 +112,7 @@ class IconShortcode extends ShortcodeBase {
 
     $output = [
       '#theme' => 'shortcode_icon',
-      '#shape' => $this->faConverter->convert($attributes['shape']),
+      '#shape' => $this->faConverter->convert($attributes['shape'] ? $attributes['shape'] : 'fa'),
       '#text' => $text,
       '#color' => $color,
       '#size' => $size,

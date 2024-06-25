@@ -1,0 +1,1387 @@
+# Generated from https://docs.fontawesome.com/web/setup/upgrade/upgrade-from-v4
+500px:
+  name: 500px
+  style: fa-brands
+address-book-o:
+  name: address-book
+  style: fa-regular
+address-card-o:
+  name: address-card
+  style: fa-regular
+adn:
+  name: adn
+  style: fa-brands
+amazon:
+  name: amazon
+  style: fa-brands
+android:
+  name: android
+  style: fa-brands
+angellist:
+  name: angellist
+  style: fa-brands
+apple:
+  name: apple
+  style: fa-brands
+area-chart:
+  name: chart-area
+  style: fa-solid
+arrow-circle-o-down:
+  name: circle-down
+  style: fa-regular
+arrow-circle-o-left:
+  name: circle-left
+  style: fa-regular
+arrow-circle-o-right:
+  name: circle-right
+  style: fa-regular
+arrow-circle-o-up:
+  name: circle-up
+  style: fa-regular
+arrows:
+  name: up-down-left-right
+  style: fa-solid
+arrows-alt:
+  name: maximize
+  style: fa-solid
+arrows-h:
+  name: left-right
+  style: fa-solid
+arrows-v:
+  name: up-down
+  style: fa-solid
+asl-interpreting:
+  name: hands-asl-interpreting
+  style: fa-solid
+automobile:
+  name: car
+  style: fa-solid
+bandcamp:
+  name: bandcamp
+  style: fa-brands
+bank:
+  name: bank
+  style: fa-solid
+bar-chart:
+  name: chart-bar
+  style: fa-regular
+bar-chart-o:
+  name: chart-bar
+  style: fa-regular
+bathtub:
+  name: bath
+  style: fa-solid
+battery:
+  name: battery-full
+  style: fa-solid
+battery-0:
+  name: battery-empty
+  style: fa-solid
+battery-1:
+  name: battery-quarter
+  style: fa-solid
+battery-2:
+  name: battery-half
+  style: fa-solid
+battery-3:
+  name: battery-three-quarters
+  style: fa-solid
+battery-4:
+  name: battery-full
+  style: fa-solid
+behance:
+  name: behance
+  style: fa-brands
+behance-square:
+  name: behance-square
+  style: fa-brands
+bell-o:
+  name: bell
+  style: fa-regular
+bell-slash-o:
+  name: bell-slash
+  style: fa-regular
+bitbucket:
+  name: bitbucket
+  style: fa-brands
+bitbucket-square:
+  name: bitbucket
+  style: fa-brands
+bitcoin:
+  name: btc
+  style: fa-brands
+black-tie:
+  name: black-tie
+  style: fa-brands
+bluetooth:
+  name: bluetooth
+  style: fa-brands
+bluetooth-b:
+  name: bluetooth-b
+  style: fa-brands
+bookmark-o:
+  name: bookmark
+  style: fa-regular
+btc:
+  name: btc
+  style: fa-brands
+building-o:
+  name: building
+  style: fa-regular
+buysellads:
+  name: buysellads
+  style: fa-brands
+cab:
+  name: taxi
+  style: fa-solid
+calendar:
+  name: calendar-days
+  style: fa-solid
+calendar-check-o:
+  name: calendar-check
+  style: fa-regular
+calendar-minus-o:
+  name: calendar-minus
+  style: fa-regular
+calendar-o:
+  name: calendar
+  style: fa-regular
+calendar-plus-o:
+  name: calendar-plus
+  style: fa-regular
+calendar-times-o:
+  name: calendar-xmark
+  style: fa-regular
+caret-square-o-down:
+  name: square-caret-down
+  style: fa-regular
+caret-square-o-left:
+  name: square-caret-left
+  style: fa-regular
+caret-square-o-right:
+  name: square-caret-right
+  style: fa-regular
+caret-square-o-up:
+  name: square-caret-up
+  style: fa-regular
+cc:
+  name: closed-captioning
+  style: fa-regular
+cc-amex:
+  name: cc-amex
+  style: fa-brands
+cc-diners-club:
+  name: cc-diners-club
+  style: fa-brands
+cc-discover:
+  name: cc-discover
+  style: fa-brands
+cc-jcb:
+  name: cc-jcb
+  style: fa-brands
+cc-mastercard:
+  name: cc-mastercard
+  style: fa-brands
+cc-paypal:
+  name: cc-paypal
+  style: fa-brands
+cc-stripe:
+  name: cc-stripe
+  style: fa-brands
+cc-visa:
+  name: cc-visa
+  style: fa-brands
+chain:
+  name: link
+  style: fa-solid
+chain-broken:
+  name: link-slash
+  style: fa-solid
+check-circle-o:
+  name: circle-check
+  style: fa-regular
+check-square-o:
+  name: square-check
+  style: fa-regular
+chrome:
+  name: chrome
+  style: fa-brands
+circle-o:
+  name: circle
+  style: fa-regular
+circle-o-notch:
+  name: circle-notch
+  style: fa-solid
+circle-thin:
+  name: circle
+  style: fa-regular
+clipboard:
+  name: clipboard
+  style: fa-regular
+clock-o:
+  name: clock
+  style: fa-regular
+clone:
+  name: clone
+  style: fa-regular
+close:
+  name: xmark
+  style: fa-solid
+cloud-download:
+  name: cloud-arrow-down
+  style: fa-solid
+cloud-upload:
+  name: cloud-arrow-up
+  style: fa-solid
+cny:
+  name: yen-sign
+  style: fa-solid
+code-fork:
+  name: code-branch
+  style: fa-solid
+codepen:
+  name: codepen
+  style: fa-brands
+codiepie:
+  name: codiepie
+  style: fa-brands
+comment-o:
+  name: comment
+  style: fa-regular
+commenting:
+  name: comment-dots
+  style: fa-solid
+commenting-o:
+  name: comment-dots
+  style: fa-regular
+comments-o:
+  name: comments
+  style: fa-regular
+compass:
+  name: compass
+  style: fa-regular
+compress:
+  name: down-left-and-up-right-to-center
+  style: fa-solid
+connectdevelop:
+  name: connectdevelop
+  style: fa-brands
+contao:
+  name: contao
+  style: fa-brands
+copyright:
+  name: copyright
+  style: fa-regular
+creative-commons:
+  name: creative-commons
+  style: fa-brands
+credit-card:
+  name: credit-card
+  style: fa-regular
+credit-card-alt:
+  name: credit-card
+  style: fa-solid
+css3:
+  name: css3
+  style: fa-brands
+cutlery:
+  name: utensils
+  style: fa-solid
+dashboard:
+  name: gauge
+  style: fa-solid
+dashcube:
+  name: dashcube
+  style: fa-brands
+deafness:
+  name: ear-deaf
+  style: fa-solid
+dedent:
+  name: outdent
+  style: fa-solid
+delicious:
+  name: delicious
+  style: fa-brands
+deviantart:
+  name: deviantart
+  style: fa-brands
+diamond:
+  name: gem
+  style: fa-regular
+digg:
+  name: digg
+  style: fa-brands
+dollar:
+  name: dollar-sign
+  style: fa-solid
+dot-circle-o:
+  name: circle-dot
+  style: fa-regular
+dribbble:
+  name: dribbble
+  style: fa-brands
+drivers-license:
+  name: id-card
+  style: fa-solid
+drivers-license-o:
+  name: id-card
+  style: fa-regular
+dropbox:
+  name: dropbox
+  style: fa-brands
+drupal:
+  name: drupal
+  style: fa-brands
+edge:
+  name: edge
+  style: fa-brands
+eercast:
+  name: sellcast
+  style: fa-brands
+empire:
+  name: empire
+  style: fa-brands
+envelope-o:
+  name: envelope
+  style: fa-regular
+envelope-open-o:
+  name: envelope-open
+  style: fa-regular
+envira:
+  name: envira
+  style: fa-brands
+etsy:
+  name: etsy
+  style: fa-brands
+eur:
+  name: euro-sign
+  style: fa-solid
+euro:
+  name: euro-sign
+  style: fa-solid
+exchange:
+  name: right-left
+  style: fa-solid
+expand:
+  name: up-right-and-down-left-from-center
+  style: fa-solid
+expeditedssl:
+  name: expeditedssl
+  style: fa-brands
+external-link:
+  name: up-right-from-square
+  style: fa-solid
+external-link-square:
+  name: square-up-right
+  style: fa-solid
+eye:
+  name: eye
+  style: fa-regular
+eye-slash:
+  name: eye-slash
+  style: fa-regular
+eyedropper:
+  name: eye-dropper
+  style: fa-solid
+fa:
+  name: font-awesome
+  style: fa-brands
+facebook:
+  name: facebook-f
+  style: fa-brands
+facebook-f:
+  name: facebook-f
+  style: fa-brands
+facebook-official:
+  name: facebook
+  style: fa-brands
+facebook-square:
+  name: facebook-square
+  style: fa-brands
+feed:
+  name: rss
+  style: fa-solid
+file-archive-o:
+  name: file-zipper
+  style: fa-regular
+file-audio-o:
+  name: file-audio
+  style: fa-regular
+file-code-o:
+  name: file-code
+  style: fa-regular
+file-excel-o:
+  name: file-excel
+  style: fa-regular
+file-image-o:
+  name: file-image
+  style: fa-regular
+file-movie-o:
+  name: file-video
+  style: fa-regular
+file-o:
+  name: file
+  style: fa-regular
+file-pdf-o:
+  name: file-pdf
+  style: fa-regular
+file-photo-o:
+  name: file-image
+  style: fa-regular
+file-picture-o:
+  name: file-image
+  style: fa-regular
+file-powerpoint-o:
+  name: file-powerpoint
+  style: fa-regular
+file-sound-o:
+  name: file-audio
+  style: fa-regular
+file-text:
+  name: file-lines
+  style: fa-solid
+file-text-o:
+  name: file-lines
+  style: fa-regular
+file-video-o:
+  name: file-video
+  style: fa-regular
+file-word-o:
+  name: file-word
+  style: fa-regular
+file-zip-o:
+  name: file-zipper
+  style: fa-regular
+files-o:
+  name: copy
+  style: fa-regular
+firefox:
+  name: firefox
+  style: fa-brands
+first-order:
+  name: first-order
+  style: fa-brands
+flag-o:
+  name: flag
+  style: fa-regular
+flash:
+  name: bolt
+  style: fa-solid
+flickr:
+  name: flickr
+  style: fa-brands
+floppy-o:
+  name: floppy-disk
+  style: fa-regular
+folder-o:
+  name: folder
+  style: fa-regular
+folder-open-o:
+  name: folder-open
+  style: fa-regular
+font-awesome:
+  name: font-awesome
+  style: fa-brands
+fonticons:
+  name: fonticons
+  style: fa-brands
+fort-awesome:
+  name: fort-awesome
+  style: fa-brands
+forumbee:
+  name: forumbee
+  style: fa-brands
+foursquare:
+  name: foursquare
+  style: fa-brands
+free-code-camp:
+  name: free-code-camp
+  style: fa-brands
+frown-o:
+  name: face-frown
+  style: fa-regular
+futbol-o:
+  name: futbol
+  style: fa-regular
+gbp:
+  name: sterling-sign
+  style: fa-solid
+ge:
+  name: empire
+  style: fa-brands
+gear:
+  name: gear
+  style: fa-solid
+gears:
+  name: gears
+  style: fa-solid
+get-pocket:
+  name: get-pocket
+  style: fa-brands
+gg:
+  name: gg
+  style: fa-brands
+gg-circle:
+  name: gg-circle
+  style: fa-brands
+git:
+  name: git
+  style: fa-brands
+git-square:
+  name: git-square
+  style: fa-brands
+github:
+  name: github
+  style: fa-brands
+github-alt:
+  name: github-alt
+  style: fa-brands
+github-square:
+  name: github-square
+  style: fa-brands
+gitlab:
+  name: gitlab
+  style: fa-brands
+gittip:
+  name: gratipay
+  style: fa-brands
+glass:
+  name: martini-glass-empty
+  style: fa-solid
+glide:
+  name: glide
+  style: fa-brands
+glide-g:
+  name: glide-g
+  style: fa-brands
+google:
+  name: google
+  style: fa-brands
+google-plus:
+  name: google-plus-g
+  style: fa-brands
+google-plus-circle:
+  name: google-plus
+  style: fa-brands
+google-plus-official:
+  name: google-plus
+  style: fa-brands
+google-plus-square:
+  name: google-plus-square
+  style: fa-brands
+google-wallet:
+  name: google-wallet
+  style: fa-brands
+gratipay:
+  name: gratipay
+  style: fa-brands
+grav:
+  name: grav
+  style: fa-brands
+group:
+  name: users
+  style: fa-solid
+hacker-news:
+  name: hacker-news
+  style: fa-brands
+hand-grab-o:
+  name: hand-back-fist
+  style: fa-regular
+hand-lizard-o:
+  name: hand-lizard
+  style: fa-regular
+hand-o-down:
+  name: hand-point-down
+  style: fa-regular
+hand-o-left:
+  name: hand-point-left
+  style: fa-regular
+hand-o-right:
+  name: hand-point-right
+  style: fa-regular
+hand-o-up:
+  name: hand-point-up
+  style: fa-regular
+hand-paper-o:
+  name: hand
+  style: fa-regular
+hand-peace-o:
+  name: hand-peace
+  style: fa-regular
+hand-pointer-o:
+  name: hand-pointer
+  style: fa-regular
+hand-rock-o:
+  name: hand-back-fist
+  style: fa-regular
+hand-scissors-o:
+  name: hand-scissors
+  style: fa-regular
+hand-spock-o:
+  name: hand-spock
+  style: fa-regular
+hand-stop-o:
+  name: hand
+  style: fa-regular
+handshake-o:
+  name: handshake
+  style: fa-regular
+hard-of-hearing:
+  name: ear-deaf
+  style: fa-solid
+hdd-o:
+  name: hard-drive
+  style: fa-regular
+header:
+  name: heading
+  style: fa-solid
+heart-o:
+  name: heart
+  style: fa-regular
+hospital-o:
+  name: hospital
+  style: fa-regular
+hotel:
+  name: bed
+  style: fa-solid
+hourglass-1:
+  name: hourglass-start
+  style: fa-solid
+hourglass-2:
+  name: hourglass
+  style: fa-solid
+hourglass-3:
+  name: hourglass-end
+  style: fa-solid
+hourglass-o:
+  name: hourglass
+  style: fa-regular
+houzz:
+  name: houzz
+  style: fa-brands
+html5:
+  name: html5
+  style: fa-brands
+id-badge:
+  name: id-badge
+  style: fa-regular
+id-card-o:
+  name: id-card
+  style: fa-regular
+ils:
+  name: shekel-sign
+  style: fa-solid
+image:
+  name: image
+  style: fa-regular
+imdb:
+  name: imdb
+  style: fa-brands
+inr:
+  name: rupee-sign
+  style: fa-solid
+instagram:
+  name: instagram
+  style: fa-brands
+institution:
+  name: building-columns
+  style: fa-solid
+internet-explorer:
+  name: internet-explorer
+  style: fa-brands
+intersex:
+  name: transgender
+  style: fa-solid
+ioxhost:
+  name: ioxhost
+  style: fa-brands
+joomla:
+  name: joomla
+  style: fa-brands
+jpy:
+  name: yen-sign
+  style: fa-solid
+jsfiddle:
+  name: jsfiddle
+  style: fa-brands
+keyboard-o:
+  name: keyboard
+  style: fa-regular
+krw:
+  name: won-sign
+  style: fa-solid
+lastfm:
+  name: lastfm
+  style: fa-brands
+lastfm-square:
+  name: lastfm-square
+  style: fa-brands
+leanpub:
+  name: leanpub
+  style: fa-brands
+legal:
+  name: gavel
+  style: fa-solid
+lemon-o:
+  name: lemon
+  style: fa-regular
+level-down:
+  name: turn-down
+  style: fa-solid
+level-up:
+  name: turn-up
+  style: fa-solid
+life-bouy:
+  name: life-ring
+  style: fa-regular
+life-buoy:
+  name: life-ring
+  style: fa-regular
+life-ring:
+  name: life-ring
+  style: fa-regular
+life-saver:
+  name: life-ring
+  style: fa-regular
+lightbulb-o:
+  name: lightbulb
+  style: fa-regular
+line-chart:
+  name: chart-line
+  style: fa-solid
+linkedin:
+  name: linkedin-in
+  style: fa-brands
+linkedin-square:
+  name: linkedin
+  style: fa-brands
+linode:
+  name: linode
+  style: fa-brands
+linux:
+  name: linux
+  style: fa-brands
+list-alt:
+  name: rectangle-list
+  style: fa-regular
+long-arrow-down:
+  name: down-long
+  style: fa-solid
+long-arrow-left:
+  name: left-long
+  style: fa-solid
+long-arrow-right:
+  name: right-long
+  style: fa-solid
+long-arrow-up:
+  name: up-long
+  style: fa-solid
+mail-forward:
+  name: share
+  style: fa-solid
+mail-reply:
+  name: reply
+  style: fa-solid
+mail-reply-all:
+  name: reply-all
+  style: fa-solid
+map-marker:
+  name: location-dot
+  style: fa-solid
+map-o:
+  name: map
+  style: fa-regular
+maxcdn:
+  name: maxcdn
+  style: fa-brands
+meanpath:
+  name: font-awesome
+  style: fa-brands
+medium:
+  name: medium
+  style: fa-brands
+meetup:
+  name: meetup
+  style: fa-brands
+meh-o:
+  name: face-meh
+  style: fa-regular
+minus-square-o:
+  name: square-minus
+  style: fa-regular
+mixcloud:
+  name: mixcloud
+  style: fa-brands
+mobile:
+  name: mobile-screen-button
+  style: fa-solid
+mobile-phone:
+  name: mobile-screen-button
+  style: fa-solid
+modx:
+  name: modx
+  style: fa-brands
+money:
+  name: money-bill-1
+  style: fa-regular
+moon-o:
+  name: moon
+  style: fa-regular
+mortar-board:
+  name: graduation-cap
+  style: fa-solid
+navicon:
+  name: bars
+  style: fa-solid
+newspaper-o:
+  name: newspaper
+  style: fa-regular
+object-group:
+  name: object-group
+  style: fa-regular
+object-ungroup:
+  name: object-ungroup
+  style: fa-regular
+odnoklassniki:
+  name: odnoklassniki
+  style: fa-brands
+odnoklassniki-square:
+  name: odnoklassniki-square
+  style: fa-brands
+opencart:
+  name: opencart
+  style: fa-brands
+openid:
+  name: openid
+  style: fa-brands
+opera:
+  name: opera
+  style: fa-brands
+optin-monster:
+  name: optin-monster
+  style: fa-brands
+pagelines:
+  name: pagelines
+  style: fa-brands
+paper-plane-o:
+  name: paper-plane
+  style: fa-regular
+paste:
+  name: clipboard
+  style: fa-regular
+pause-circle-o:
+  name: circle-pause
+  style: fa-regular
+paypal:
+  name: paypal
+  style: fa-brands
+pencil:
+  name: pencil
+  style: fa-solid
+pencil-square:
+  name: square-pen
+  style: fa-solid
+pencil-square-o:
+  name: pen-to-square
+  style: fa-regular
+photo:
+  name: image
+  style: fa-regular
+picture-o:
+  name: image
+  style: fa-regular
+pie-chart:
+  name: chart-pie
+  style: fa-solid
+pied-piper:
+  name: pied-piper
+  style: fa-brands
+pied-piper-alt:
+  name: pied-piper-alt
+  style: fa-brands
+pied-piper-pp:
+  name: pied-piper-pp
+  style: fa-brands
+pinterest:
+  name: pinterest
+  style: fa-brands
+pinterest-p:
+  name: pinterest-p
+  style: fa-brands
+pinterest-square:
+  name: pinterest-square
+  style: fa-brands
+play-circle-o:
+  name: circle-play
+  style: fa-regular
+plus-square-o:
+  name: square-plus
+  style: fa-regular
+product-hunt:
+  name: product-hunt
+  style: fa-brands
+qq:
+  name: qq
+  style: fa-brands
+question-circle-o:
+  name: circle-question
+  style: fa-regular
+quora:
+  name: quora
+  style: fa-brands
+ra:
+  name: rebel
+  style: fa-brands
+ravelry:
+  name: ravelry
+  style: fa-brands
+rebel:
+  name: rebel
+  style: fa-brands
+reddit:
+  name: reddit
+  style: fa-brands
+reddit-alien:
+  name: reddit-alien
+  style: fa-brands
+reddit-square:
+  name: reddit-square
+  style: fa-brands
+refresh:
+  name: arrows-rotate
+  style: fa-solid
+registered:
+  name: registered
+  style: fa-regular
+remove:
+  name: xmark
+  style: fa-solid
+renren:
+  name: renren
+  style: fa-brands
+reorder:
+  name: bars
+  style: fa-solid
+repeat:
+  name: arrow-rotate-right
+  style: fa-solid
+resistance:
+  name: rebel
+  style: fa-brands
+rmb:
+  name: yen-sign
+  style: fa-solid
+rotate-left:
+  name: arrow-rotate-left
+  style: fa-solid
+rotate-right:
+  name: arrow-rotate-right
+  style: fa-solid
+rouble:
+  name: ruble-sign
+  style: fa-solid
+rub:
+  name: ruble-sign
+  style: fa-solid
+ruble:
+  name: ruble-sign
+  style: fa-solid
+rupee:
+  name: rupee-sign
+  style: fa-solid
+s15:
+  name: bath
+  style: fa-solid
+safari:
+  name: safari
+  style: fa-brands
+scissors:
+  name: scissors
+  style: fa-solid
+scribd:
+  name: scribd
+  style: fa-brands
+sellsy:
+  name: sellsy
+  style: fa-brands
+send:
+  name: paper-plane
+  style: fa-solid
+send-o:
+  name: paper-plane
+  style: fa-regular
+share-square-o:
+  name: share-from-square
+  style: fa-regular
+shekel:
+  name: shekel-sign
+  style: fa-solid
+sheqel:
+  name: shekel-sign
+  style: fa-solid
+shield:
+  name: shield-blank
+  style: fa-solid
+shirtsinbulk:
+  name: shirtsinbulk
+  style: fa-brands
+sign-in:
+  name: right-to-bracket
+  style: fa-solid
+sign-out:
+  name: right-from-bracket
+  style: fa-solid
+signing:
+  name: hands
+  style: fa-solid
+simplybuilt:
+  name: simplybuilt
+  style: fa-brands
+skyatlas:
+  name: skyatlas
+  style: fa-brands
+skype:
+  name: skype
+  style: fa-brands
+slack:
+  name: slack
+  style: fa-brands
+sliders:
+  name: sliders
+  style: fa-solid
+slideshare:
+  name: slideshare
+  style: fa-brands
+smile-o:
+  name: face-smile
+  style: fa-regular
+snapchat:
+  name: snapchat
+  style: fa-brands
+snapchat-ghost:
+  name: snapchat
+  style: fa-brands
+snapchat-square:
+  name: snapchat-square
+  style: fa-brands
+snowflake-o:
+  name: snowflake
+  style: fa-regular
+soccer-ball-o:
+  name: futbol
+  style: fa-regular
+sort-alpha-asc:
+  name: arrow-down-a-z
+  style: fa-solid
+sort-alpha-desc:
+  name: arrow-down-z-a
+  style: fa-solid
+sort-amount-asc:
+  name: arrow-down-wide-short
+  style: fa-solid
+sort-amount-desc:
+  name: arrow-down-short-wide
+  style: fa-solid
+sort-asc:
+  name: sort-up
+  style: fa-solid
+sort-desc:
+  name: sort-down
+  style: fa-solid
+sort-numeric-asc:
+  name: arrow-down-1-9
+  style: fa-solid
+sort-numeric-desc:
+  name: arrow-down-9-1
+  style: fa-solid
+soundcloud:
+  name: soundcloud
+  style: fa-brands
+spoon:
+  name: spoon
+  style: fa-solid
+spotify:
+  name: spotify
+  style: fa-brands
+square-o:
+  name: square
+  style: fa-regular
+stack-exchange:
+  name: stack-exchange
+  style: fa-brands
+stack-overflow:
+  name: stack-overflow
+  style: fa-brands
+star-half-empty:
+  name: star-half
+  style: fa-regular
+star-half-full:
+  name: star-half
+  style: fa-regular
+star-half-o:
+  name: star-half
+  style: fa-regular
+star-o:
+  name: star
+  style: fa-regular
+steam:
+  name: steam
+  style: fa-brands
+steam-square:
+  name: steam-square
+  style: fa-brands
+sticky-note-o:
+  name: note-sticky
+  style: fa-regular
+stop-circle-o:
+  name: circle-stop
+  style: fa-regular
+stumbleupon:
+  name: stumbleupon
+  style: fa-brands
+stumbleupon-circle:
+  name: stumbleupon-circle
+  style: fa-brands
+sun-o:
+  name: sun
+  style: fa-regular
+superpowers:
+  name: superpowers
+  style: fa-brands
+support:
+  name: life-ring
+  style: fa-regular
+tablet:
+  name: tablet-screen-button
+  style: fa-solid
+tachometer:
+  name: gauge
+  style: fa-solid
+telegram:
+  name: telegram
+  style: fa-brands
+television:
+  name: tv
+  style: fa-solid
+tencent-weibo:
+  name: tencent-weibo
+  style: fa-brands
+themeisle:
+  name: themeisle
+  style: fa-brands
+thermometer:
+  name: temperature-full
+  style: fa-solid
+thermometer-0:
+  name: temperature-empty
+  style: fa-solid
+thermometer-1:
+  name: temperature-quarter
+  style: fa-solid
+thermometer-2:
+  name: temperature-half
+  style: fa-solid
+thermometer-3:
+  name: temperature-three-quarters
+  style: fa-solid
+thermometer-4:
+  name: temperature-full
+  style: fa-solid
+thumb-tack:
+  name: thumbtack
+  style: fa-solid
+thumbs-o-down:
+  name: thumbs-down
+  style: fa-regular
+thumbs-o-up:
+  name: thumbs-up
+  style: fa-regular
+ticket:
+  name: ticket-simple
+  style: fa-solid
+times-circle-o:
+  name: circle-xmark
+  style: fa-regular
+times-rectangle:
+  name: rectangle-xmark
+  style: fa-solid
+times-rectangle-o:
+  name: rectangle-xmark
+  style: fa-regular
+toggle-down:
+  name: square-caret-down
+  style: fa-regular
+toggle-left:
+  name: square-caret-left
+  style: fa-regular
+toggle-right:
+  name: square-caret-right
+  style: fa-regular
+toggle-up:
+  name: square-caret-up
+  style: fa-regular
+trash:
+  name: trash-can
+  style: fa-solid
+trash-o:
+  name: trash-can
+  style: fa-regular
+trello:
+  name: trello
+  style: fa-brands
+try:
+  name: lira-sign
+  style: fa-solid
+tumblr:
+  name: tumblr
+  style: fa-brands
+tumblr-square:
+  name: tumblr-square
+  style: fa-brands
+turkish-lira:
+  name: lira-sign
+  style: fa-solid
+twitch:
+  name: twitch
+  style: fa-brands
+twitter:
+  name: twitter
+  style: fa-brands
+twitter-square:
+  name: twitter-square
+  style: fa-brands
+unsorted:
+  name: sort
+  style: fa-solid
+usb:
+  name: usb
+  style: fa-brands
+usd:
+  name: dollar-sign
+  style: fa-solid
+user-circle-o:
+  name: circle-user
+  style: fa-regular
+user-o:
+  name: user
+  style: fa-regular
+vcard:
+  name: address-card
+  style: fa-solid
+vcard-o:
+  name: address-card
+  style: fa-regular
+viacoin:
+  name: viacoin
+  style: fa-brands
+viadeo:
+  name: viadeo
+  style: fa-brands
+viadeo-square:
+  name: viadeo-square
+  style: fa-brands
+video-camera:
+  name: video
+  style: fa-solid
+vimeo:
+  name: vimeo-v
+  style: fa-brands
+vimeo-square:
+  name: vimeo-square
+  style: fa-brands
+vine:
+  name: vine
+  style: fa-brands
+vk:
+  name: vk
+  style: fa-brands
+volume-control-phone:
+  name: phone-volume
+  style: fa-solid
+warning:
+  name: triangle-exclamation
+  style: fa-solid
+wechat:
+  name: weixin
+  style: fa-brands
+weibo:
+  name: weibo
+  style: fa-brands
+weixin:
+  name: weixin
+  style: fa-brands
+whatsapp:
+  name: whatsapp
+  style: fa-brands
+wheelchair-alt:
+  name: accessible-icon
+  style: fa-brands
+wikipedia-w:
+  name: wikipedia-w
+  style: fa-brands
+window-close-o:
+  name: rectangle-xmark
+  style: fa-regular
+window-maximize:
+  name: window-maximize
+  style: fa-regular
+window-restore:
+  name: window-restore
+  style: fa-regular
+windows:
+  name: windows
+  style: fa-brands
+won:
+  name: won-sign
+  style: fa-solid
+wordpress:
+  name: wordpress
+  style: fa-brands
+wpbeginner:
+  name: wpbeginner
+  style: fa-brands
+wpexplorer:
+  name: wpexplorer
+  style: fa-brands
+wpforms:
+  name: wpforms
+  style: fa-brands
+xing:
+  name: xing
+  style: fa-brands
+xing-square:
+  name: xing-square
+  style: fa-brands
+y-combinator:
+  name: y-combinator
+  style: fa-brands
+y-combinator-square:
+  name: hacker-news
+  style: fa-brands
+yahoo:
+  name: yahoo
+  style: fa-brands
+yc:
+  name: y-combinator
+  style: fa-brands
+yc-square:
+  name: hacker-news
+  style: fa-brands
+yelp:
+  name: yelp
+  style: fa-brands
+yen:
+  name: yen-sign
+  style: fa-solid
+yoast:
+  name: yoast
+  style: fa-brands
+youtube:
+  name: youtube
+  style: fa-brands
+youtube-play:
+  name: youtube
+  style: fa-brands
+youtube-square:
+  name: youtube-square
+  style: fa-brands
