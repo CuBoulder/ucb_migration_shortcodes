@@ -3,9 +3,10 @@
 namespace Drupal\ucb_migration_shortcodes\Plugin\Shortcode;
 
 use Drupal\Core\Language\Language;
-use Drupal\shortcode\Plugin\ShortcodeBase;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Render\RendererInterface;
+use Drupal\shortcode\Plugin\ShortcodeBase;
+use Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * The button shortcode.
@@ -18,20 +19,29 @@ use Drupal\Core\Render\RendererInterface;
 class ButtonShortcode extends ShortcodeBase {
 
   /**
-   * The renderer service.
+   * The Font Awesome 4 to 6 converter.
    *
-   * @var \Drupal\Core\Render\RendererInterface
+   * @var \Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter
    */
-  protected $renderer;
+  protected $faConverter;
 
   /**
    * Constructs a ButtonShortcode object.
    *
+   * @param array $configuration
+   *   A configuration array containing information about the plugin instance.
+   * @param string $plugin_id
+   *   The plugin ID for the plugin instance.
+   * @param mixed $plugin_definition
+   *   The plugin implementation definition.
    * @param \Drupal\Core\Render\RendererInterface $renderer
    *   The renderer service.
+   * @param \Drupal\ucb_migration_shortcodes\FontAwesome4to6Converter $faConverter
+   *   The Font Awesome 4 to 6 converter.
    */
-  public function __construct(RendererInterface $renderer) {
-    $this->renderer = $renderer;
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, RendererInterface $renderer, FontAwesome4to6Converter $faConverter) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition, $renderer);
+    $this->faConverter = $faConverter;
   }
 
   /**
@@ -39,7 +49,11 @@ class ButtonShortcode extends ShortcodeBase {
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
     return new static(
-      $container->get('renderer')
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
+      $container->get('renderer'),
+      $container->get('ucb_migration_shortcodes.font_awesome_converter')
     );
   }
 
@@ -60,17 +74,39 @@ class ButtonShortcode extends ShortcodeBase {
     // Process nested shortcodes in the text content manually.
     $processed_text = $this->processNestedShortcodes($text, $langcode);
 
+    $color = 'blue';
+    $style = 'default';
+    $size = 'regular';
+
+    $userColor = $attributes['color'];
+    $userStyle = $attributes['style'];
+    $userSize = $attributes['size'];
+
+    // These are the supported non-default colors.
+    if ($userColor == 'black' || $userColor == 'gray' || $userColor == 'white' || $userColor == 'gold') {
+      $color = $userColor;
+    }
+
+    // These are the supported non-default styles.
+    if ($userStyle == 'full') {
+      $style = $userStyle;
+    }
+
+    // These are the supported non-default sizes.
+    if ($userSize == 'small' || $userSize == 'large') {
+      $size = $userSize;
+    }
+
     $output = [
       '#theme' => 'shortcode_button',
       '#link' => $attributes['url'],
-      '#title' => strip_tags($processed_text),
       '#text' => [
         '#markup' => $processed_text,
       ],
-      '#color' => $attributes['color'],
-      '#style' => $attributes['style'],
-      '#size' => $attributes['size'],
-      '#ico' => $attributes['icon'],
+      '#color' => $color,
+      '#style' => $style,
+      '#size' => $size,
+      '#ico' => $this->faConverter->convert($attributes['icon']),
     ];
 
     return $this->renderer->renderRoot($output);
@@ -87,10 +123,9 @@ class ButtonShortcode extends ShortcodeBase {
    * @return string
    *   The processed text with shortcodes rendered.
    */
-  // Simple shortcode processing logic.
   protected function processNestedShortcodes($text, $langcode) {
     $shortcode_tags = [
-      // Here's where we can put allowed shortcodes
+      // Here's where we can put allowed shortcodes.
       'icon' => 'Drupal\ucb_migration_shortcodes\Plugin\Shortcode\IconShortcode',
     ];
 
@@ -128,4 +163,5 @@ class ButtonShortcode extends ShortcodeBase {
     }
     return $attributes;
   }
+
 }
