@@ -8,9 +8,9 @@
  */
 #}
 {% if text starts with 'https://calendar.google.com/calendar/embed?' %}
-    <ucb-calendar class="ucb-calendar ucb-google-calendar" data-query-string="{{ text|raw|replace({'https://calendar.google.com/calendar/embed?': ''}) }}">&nbsp;</ucb-calendar>
+    <ucb-calendar class="ucb-calendar ucb-google-calendar" data-query-string="{{ text|replace({'https://calendar.google.com/calendar/embed?': ''}) }}">&nbsp;</ucb-calendar>
 {% elseif text starts with 'https://www.google.com/calendar/embed?' %}
-    <ucb-calendar class="ucb-calendar ucb-google-calendar" data-query-string="{{ text|raw|replace({'https://www.google.com/calendar/embed?': ''}) }}">&nbsp;</ucb-calendar>
+    <ucb-calendar class="ucb-calendar ucb-google-calendar" data-query-string="{{ text|replace({'https://www.google.com/calendar/embed?': ''}) }}">&nbsp;</ucb-calendar>
 {% else %}
     <strong>Not a valid Google calendar.</strong>
 {% endif %}
