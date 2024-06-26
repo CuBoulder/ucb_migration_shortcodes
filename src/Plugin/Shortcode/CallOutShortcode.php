@@ -20,6 +20,14 @@ class CalloutShortcode extends ShortcodeBase {
    */
   public function process(array $attributes, $text, $langcode = Language::LANGCODE_NOT_SPECIFIED) {
 
+    $size = 'medium';
+
+    $userSize = $attributes['size'];
+
+    if ($userSize == 'large' || $userSize == 'xlarge') {
+      $size = $userSize;
+    }
+
     // Merge with default attributes.
     $attributes = $this->getAttributes([
       'size' => '',
@@ -30,7 +38,7 @@ class CalloutShortcode extends ShortcodeBase {
     $output = [
       '#theme' => 'shortcode_callout',
       '#text' => $text,
-      '#size' => $attributes['size'],
+      '#size' => $size,
     ];
     return $this->render($output);
   }
