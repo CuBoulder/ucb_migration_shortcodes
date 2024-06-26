@@ -16,7 +16,7 @@ function ucb_migration_shortcodes_theme() {
     ],
     // Icon.
     'shortcode_icon' => [
-      'variables' => ['shape' => NULL, 'color' => NULL, 'size' => NULL, 'wrapper' => NULL, 'text' => ''],
+      'variables' => ['shape' => NULL, 'color' => NULL, 'size' => NULL, 'pull' => NULL, 'wrapper' => NULL, 'text' => ''],
     ],
     // Button.
     'shortcode_button' => [
