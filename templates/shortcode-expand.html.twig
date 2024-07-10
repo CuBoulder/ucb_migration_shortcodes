@@ -9,40 +9,15 @@
  * - style
  */
 #}
-
-{% set expandID = random() %}
-
-{% if style == "tooltip" %}
-
-	<span class="tooltip-expand-set">
-		<a href="#expand-{{ expandID }}" class="tooltip-expand-title tipid-expand-{{ expandID }}" aria-expanded="false">{{ title|t }}&nbsp;<i class="fa-solid fa-square-plus"></i>
-		</a>
-		<span id="expand-{{ expandID }}" class="tooltip-expand-content" style="display: none;">
-			<span class="tooltip-inner">{{ text|t }}<br><a href="#expand-{{ expandID }}" class="close-tip" rel="tipid-expand-{{ expandID }}">
-					<i class="fa fa-times"></i>
-				</a>
-			</span>d
-		</span>
-	</span>
-
-{% elseif style == "small" %}
-
-	<div class="small-expand-set">
-		<a href="#expand-{{ expandID }}" class="small-expand-title" aria-expanded="false">{{ title|t }}&nbsp;<i class="fa-solid fa-square-plus"></i>
-		</a>
-		<div id="expand-{{ expandID }}" class="small-expand-content" style="display: none;">{{ text|t }}</div>
-	</div>
-
-{% else %}
-
-	<div class="expand-set">
-		<div>
-			<a href="#expand-{{ expandID }}" class="expand-title expand-trigger" aria-expanded="false">
-				<i class="fa-solid fa-square-plus"></i><i class="fa-solid fa-square-minus"></i>
-				<span class="expand show">{{ title|t }}</span>
-			</a>
-		</div>
-		<div id="expand-{{ expandID }}" class="expand-content" style="display: none;">{{ text|t }}</div>
-	</div>
-
-{% endif %}
+<div class="accordion" data-accordion-id="{{ random() }}">
+  <div class="accordion-item">
+    <div class="accordion-header">
+      <a class="accordion-button" href="#">{{ title|raw }}</a>
+    </div>
+    <div class="accordion-collapse">
+      <div class="accordion-body">
+        {{ text|raw }}
+      </div>
+    </div>
+  </div>
+</div>
