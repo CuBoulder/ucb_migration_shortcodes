@@ -24,16 +24,19 @@ class ExpandShortcode extends ShortcodeBase {
     $attributes = $this->getAttributes([
       'title' => '',
       'style' => '',
-    ],
-      $attributes
-    );
+    ], $attributes);
 
     $output = [
       '#theme' => 'shortcode_expand',
-      '#text' => $text,
-      '#title' => $attributes['title'],
+      '#text' => [
+        '#markup' => $text,
+      ],
+      '#title' => [
+        '#markup' => $attributes['title'],
+      ],
       '#style' => $attributes['style'],
     ];
     return $this->render($output);
   }
+
 }
