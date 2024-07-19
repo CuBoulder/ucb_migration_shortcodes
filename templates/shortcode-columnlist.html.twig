@@ -9,8 +9,6 @@
  */
 #}
 
-<div class="column-list column-list-{{ columns }}">
-	<ul>
-		{{ text|t }}
-	</ul>
-</div>
+<ul class="column-list column-list-{{ columns }}">
+  {{ text|striptags('<li>')|raw }}
+</ul>
