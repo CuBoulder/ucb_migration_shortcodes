@@ -10,13 +10,6 @@
  */
 #}
 
-{% if order != "last" %}
-  <div class="content-column column-{{ size }} {{ order }}">
-    {{ text|t }}
-  </div>
-{% else %}
-  <div class="content-column column-{{ size }} {{ order }}">
-    {{ text|t }}
-  </div>
-  <p class="clear-fix"></p>
-{% endif %}
+<div class="col ucb-column">
+  {{ text|t }}
+</div>
