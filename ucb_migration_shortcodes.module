@@ -26,6 +26,10 @@ function ucb_migration_shortcodes_theme() {
     'shortcode_column' => [
       'variables' => ['size' => NULL, 'order' => NULL, 'text' => ''],
     ],
+    // Colset.
+    'shortcode_colset' => [
+      'variables' => ['text' => ''],
+    ],
     // Expand.
     'shortcode_expand' => [
       'variables' => ['title' => NULL, 'style' => NULL, 'text' => ''],
