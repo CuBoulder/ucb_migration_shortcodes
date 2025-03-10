@@ -1,7 +1,7 @@
 name: 'UCB Migration Shortcodes'
 type: module
 description: 'Shortcodes created to ease the burden of migration'
-core_version_requirement: ^9.3 || ^10
+core_version_requirement: ^9.3 || ^10 || ^11
 dependencies:
   - shortcode:shortcode
 package: 'Input filters'
